@@ -1,0 +1,104 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Asaad Areeb</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+
+    <!-- idea: have a javascript animated loss function converging in the header? :p -->
+    <div id="dhead" class="container">
+      <div class="row">
+        <div id="dpic">
+          <img src="src\pf2.jpeg" class="ppic" />
+        </div>
+        <div id="ddesc">
+          <h1>Asaad Areeb</h1>
+          <h2>I like building deep neural nets.</h2>
+          <div id="dico">
+            <a href="https://github.com/AsaadAreeb"><img src="src/github-mark.svg" class="iico"/></a>
+            <!-- <a href="https://medium.com/@karpathy"><img src="assets/crss.svg" class="iico" /></a> -->
+            <img src="src/cemail.svg" style="cursor: pointer;" class="iico" id="iemail" title="click to reveal" />
+          </div>
+          <div id="demail"></div> <!-- will reveal email -->
+        </div>
+      </div>
+    </div>
+
+    <hr>
+
+    <div id="history" class="container">
+      <div class="entry row">
+        <div class="timespan">
+          Apr 2022 - Jun 2022
+        </div>
+        <div class="ico">
+          <div class="entry-dot"></div>
+          <img src="src\logo1.png" />
+        </div>
+        <div class="desc">
+          <div class="htxt">
+            I was React Native Internee at <a href="https://helloworldtech.com/">Hello World Technologies</a>.
+          </div>
+        </div>
+      </div>
+
+      <div class="entry row">
+        <div class="timespan">
+          2018 - 2022
+        </div>
+        <div class="ico">
+          <div class="entry-dot"></div>
+          <img src="src\UEIT_Logo.png" />
+        </div>
+        <div class="desc">
+          BS at Khwaja Fareed UEIT in Software Engineering.
+        </div>
+      </div>
+    </div>
+
+    <div id="pet-projects" class="container">
+      <div class="ctitle">Projects</div>
+
+      <div class="project">
+        <div class="pico"><a href="projs\doggo.html"><img src="src\doggo.jpg" /></a></div>
+        <div class="pdesc"><a href="https://github.com/AsaadAreeb/doggo">doggo</a> is related to Dog Breed Identification compitition on <a href="https://www.kaggle.com/competitions/dog-breed-identification/overview">Kaggle</a>. It was implemented using pretrained model <a href="https://tfhub.dev/google/imagenet/mobilenet_v2_130_224/classification/5">mobilenet_v2</a>.</div>
+        <div class="pend"></div>
+      </div>
+
+      <div class="project">
+        <div class="pico"><a href="projs/faceverify.html"><img src="src\siamese.webp" /></a></div>
+        <div class="pdesc"><a href="https://github.com/AsaadAreeb/FaceVerify">FaceVerify</a> is an implementation of <a href="https://www.cs.cmu.edu/~rsalakhu/papers/oneshot1.pdf">Siamese neural architecture</a>. Deployed in real-time using Kivy framework.</div>
+        <div class="pend"></div>
+      </div>
+
+      <div class="project">
+        <div class="pico"><img src="src\traffic1.png" /></div>
+        <div class="pdesc"><a href="https://github.com/AsaadAreeb/Traffic-Analysis-and-Prediction">Traffic-Analysis</a> involves different ways of Exploratory data analysis.</div>
+        <div class="pend"></div>
+      </div>
+
+      <div class="project">
+        <div class="pico"><a href="projs/tunebert.html"><img src="src\bert.png" /></a></div>
+        <div class="pdesc"><a href="https://github.com/AsaadAreeb/finetuning_bert">finetuning_bert</a> was a simple finetuning on quora-insincere-questions dataset.</div>
+        <div class="pend"></div>
+      </div>
+    </div>
+
+    <br><br><br><br><br><br><br><br><br><br><br>
+
+    <!-- attempt hiding from spambots :p -->
+    <script type="text/javascript">
+      var e_is_shown = false;
+      document.getElementById('iemail').addEventListener("click", function(){
+        let demail = document.getElementById('demail');
+        demail.innerHTML = 'asaadareeb773' + ' _at_ ' + 'gmail' + '.com';
+        demail.style.opacity = e_is_shown ? 0 : 1;
+        e_is_shown = !e_is_shown;
+      })
+    </script>
+  </body>
+</html>
