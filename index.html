@@ -46,7 +46,7 @@
       <div id="main-nav" class="collapse navbar-collapse">
         <ul class="nav navbar-nav" id="mainNav">
           <li class="active"><a href="#home" class="scroll-link">Home</a></li>
-          <li><a href="#aboutUs" class="scroll-link">About</a></li>
+          <li><a href="#aboutMe" class="scroll-link">About</a></li>
           <li><a href="#skills" class="scroll-link">Skills</a></li>
           <li><a href="#experience" class="scroll-link">Experience</a></li>
           <li><a href="#portfolio" class="scroll-link">Portfolio</a></li>
@@ -79,19 +79,26 @@
   </div>
 </section>
 <!--About-->
-<section id="aboutUs">
+<section id="aboutMe">
   <div class="container">
     <div class="row"> 
       <!-- item -->
-      <div class="col-md-4 tileBox"> <img src="images/photo-1.jpg" alt="me"/> </div>
+      <!-- <div class="col-md-4 tileBox">
+        <img src="images/photo-1.jpg" alt="me"/>
+      </div> -->
       <div class="col-md-8 tileBox">
         <div class="txtHead">
           <h2>I am Asaad Areeb,</h2>
           <h3> ML Engineer / Web Developer Based in Lahore, PK.</h3>
         </div>
-        <p> Bachelors in Software Engineering from Khwaja Fareed UEIT, RYK <br/>
-          <br/>
-          I completed my internship at Hello World Technologies in RYK. Currently, I have been honing my research skills and undertaking side projects in the field of machine learning. This is in preparation for my desired pursuit of a master's degree in this field.</p>
+        <div class="row"> <!-- Create a new row for the full-width paragraph -->
+          <div class="col-md-12"> <!-- Use col-md-12 to cover full width -->
+            <p> Bachelors in Software Engineering from Khwaja Fareed UEIT, RYK 
+            <br/><br/>
+            I completed my internship at Hello World Technologies in RYK. Currently, I have been honing my research skills and undertaking side projects in the field of machine learning. This is in preparation for my desired pursuit of a master's degree in this field.
+            </p>
+          </div>
+        </div>
       </div>
       <!-- end: --> 
     </div>
@@ -102,7 +109,12 @@
   <div class="parlex-back">
     <div class="container">
      <div class="row">
-	<div class="col-md-12">      <h2>“AI is the new electricity – enabling us to do more.” <span>-Andrew Ng</span></h2></div>
+      <div class="col-md-12">
+        <h2 style="text-align: center;">“AI is the new electricity – enabling us to do more.”
+          <br>
+          <span style="display: block; text-align: right;">– Andrew Ng</span>
+        </h2>
+      </div>
       </div>
     </div>
     <!--/.container--> 
@@ -150,7 +162,7 @@
       <div class="col-sm-6">
         <h2>Programming Skills</h2>
         <p class="mrgBtm20"> 
-          I possess a diverse programming skill set that encompasses Python, C++, Keras, and PyTorch. In Python, I excel in web development, data analysis, and AI model development, utilizing libraries like NumPy, Pandas, and Django. With C++, I tackle system-level programming, game development, and high-performance applications. My expertise in Keras allows me to swiftly construct and train neural networks with pre-built layers and optimization algorithms. Moreover, my proficiency in PyTorch enables me to utilize its dynamic computational graph and GPU acceleration for deep learning and scientific computing. These skills equip me to contribute effectively to projects in data science, AI, and software development. </p>
+          I've got a mix of programming skills in my toolbox: Python, a bit of C++, and PyTorch. Python is my go-to for web development, digging into data, and crafting AI models using cool libraries like NumPy, Pandas, and Django. I've also dabbled in C++, enough to handle some system-level stuff and create basic applications. PyTorch is where I shine—I've built encoder-decoder models, played around with transformers and their fancy multi-attention heads, and even tamed the GPT (Generative Pre-trained Transformer) beast using PyTorch. These skills let me dive into all sorts of projects, from data science to AI to software development. </p>
       </div>
       <div class="col-sm-6"> <br/>
         <br/>
@@ -167,7 +179,7 @@
           <div class="col-md-2 skilltitle"><b>C++</b></div>
           <div class="col-md-10">
             <div class="progress">
-              <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;"> <span class="sr-only">80% Complete</span> </div>
+              <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 60%;"> <span class="sr-only">80% Complete</span> </div>
             </div>
           </div>
         </div>
@@ -247,10 +259,10 @@
         <div class="row">
           <div class="portfolio-items isotopeWrapper clearfix" id="3">
             <article class="col-sm-4 isotopeItem ml">
-              <div class="portfolio-item"> <img src="images\portfolio\siamese.webp" alt="" width="400" height="300"/>
+              <div class="portfolio-item"> <img src="images\portfolio\ML\faceverify\siamese.webp" alt="" width="400" height="300"/>
                 <div class="portfolio-desc align-center">
                   <div class="folio-info">
-                    <a href="images\portfolio\faceverifydes.PNG" class="fancybox">
+                    <a href="images\portfolio\ML\faceverify\faceverifydes.PNG" class="fancybox">
                       <h5>Face Verify</h5>
                       <i class="fa fa-plus-square-o fa-2x"></i>
                     </a>
@@ -259,10 +271,10 @@
               </div>
             </article>
             <article class="col-sm-4 isotopeItem ml">
-              <div class="portfolio-item"> <img src="images\portfolio\doggo.jpg" alt="" width="400" height="300"/>
+              <div class="portfolio-item"> <img src="images\portfolio\ML\dogclassify\doggo.jpg" alt="" width="400" height="300"/>
                 <div class="portfolio-desc align-center">
                   <div class="folio-info">
-                    <a href="images\portfolio\dogclassify.PNG" class="fancybox">
+                    <a href="images\portfolio\ML\dogclassify\dogclassify.PNG" class="fancybox">
                       <h5>Dog breed classification</h5>
                       <i class="fa fa-plus-square-o fa-2x"></i>
                     </a>
@@ -270,7 +282,7 @@
                 </div>
               </div>
             </article>
-            <article class="col-sm-4 isotopeItem ml">
+            <!-- <article class="col-sm-4 isotopeItem ml">
               <div class="portfolio-item"> <img src="images/portfolio/img3.jpg" alt="" />
                 <div class="portfolio-desc align-center">
                   <div class="folio-info"> <a href="images/portfolio/img3.jpg" class="fancybox">
@@ -278,17 +290,17 @@
                     <i class="fa fa-plus-square-o fa-2x"></i></a> </div>
                 </div>
               </div>
-            </article>
+            </article> -->
             <article class="col-sm-4 isotopeItem webdesign">
-              <div class="portfolio-item"> <img src="images/portfolio/img4.jpg" alt="" />
+              <div class="portfolio-item"> <img src="images\portfolio\WEB\blog\django.png" alt="" width="400" height="300"/>
                 <div class="portfolio-desc align-center">
                   <div class="folio-info"> <a href="images/portfolio/img4.jpg" class="fancybox">
-                    <h5>Project Name</h5>
+                    <h5>Blogging Site</h5>
                     <i class="fa fa-plus-square-o fa-2x"></i></a> </div>
                 </div>
               </div>
             </article>
-            <article class="col-sm-4 isotopeItem ml">
+            <!-- <article class="col-sm-4 isotopeItem ml">
               <div class="portfolio-item"> <img src="images/portfolio/img5.jpg" alt="" />
                 <div class="portfolio-desc align-center">
                   <div class="folio-info"> <a href="images/portfolio/img5.jpg" class="fancybox">
@@ -296,17 +308,17 @@
                     <i class="fa fa-plus-square-o fa-2x"></i></a> </div>
                 </div>
               </div>
-            </article>
+            </article> -->
             <article class="col-sm-4 isotopeItem webdesign">
-              <div class="portfolio-item"> <img src="images/portfolio/img6.jpg" alt="" />
+              <div class="portfolio-item"> <img src="images\portfolio\WEB\ecommerce\Shop.png" alt="" width="400" height="300"/>
                 <div class="portfolio-desc align-center">
                   <div class="folio-info"> <a href="images/portfolio/img6.jpg" class="fancybox">
-                    <h5>Project Name</h5>
+                    <h5>ShopSynced</h5>
                     <i class="fa fa-plus-square-o fa-2x"></i></a> </div>
                 </div>
               </div>
             </article>
-            <article class="col-sm-4 isotopeItem print">
+            <!-- <article class="col-sm-4 isotopeItem print">
               <div class="portfolio-item"> <img src="images/portfolio/img7.jpg" alt="" />
                 <div class="portfolio-desc align-center">
                   <div class="folio-info"> <a href="images/portfolio/img7.jpg" class="fancybox">
@@ -314,8 +326,8 @@
                     <i class="fa fa-plus-square-o fa-2x"></i></a> </div>
                 </div>
               </div>
-            </article>
-            <article class="col-sm-4 isotopeItem ml">
+            </article> -->
+            <!-- <article class="col-sm-4 isotopeItem ml">
               <div class="portfolio-item"> <img src="images/portfolio/img8.jpg" alt="" />
                 <div class="portfolio-desc align-center">
                   <div class="folio-info"> <a href="images/portfolio/img8.jpg" class="fancybox">
@@ -323,8 +335,8 @@
                     <i class="fa fa-plus-square-o fa-2x"></i></a> </div>
                 </div>
               </div>
-            </article>
-            <article class="col-sm-4 isotopeItem print">
+            </article> -->
+            <!-- <article class="col-sm-4 isotopeItem print">
               <div class="portfolio-item"> <img src="images/portfolio/img9.jpg" alt="" />
                 <div class="portfolio-desc align-center">
                   <div class="folio-info"> <a href="images/portfolio/img9.jpg" class="fancybox">
@@ -332,7 +344,7 @@
                     <i class="fa fa-plus-square-o fa-2x"></i></a> </div>
                 </div>
               </div>
-            </article>
+            </article> -->
           </div>
         </div>
       </div>
