@@ -346,8 +346,8 @@ box-shadow: 0px 3px 4px 0px rgba(50, 50, 50, 0.38);
 }
 .heading {
 	padding: 3px 10px;
-	padding-bottom: 15px;
-	margin-bottom: 30px;
+	padding-bottom: 10px;
+	margin-bottom: 15px;
 	display: block;
 }
 .pdingBtm30 {
@@ -467,7 +467,7 @@ padding-bottom: 40px;
 	margin-top: 106px;
 } */
 .skillContainer{
-	margin-bottom: 70px;	
+	margin-bottom: 50px;	
 	}
 .skillBox { 
 min-height:200px;
@@ -889,7 +889,7 @@ background: url(../images/bg2.png) top repeat;
 	display: inline-block !important; 
 }
 .skillContainer{
-	margin-bottom: 50px;	
+	margin-bottom: 50px;
 	}
 .skillBox { 
 min-height:200px;
