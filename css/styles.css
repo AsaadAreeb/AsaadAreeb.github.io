@@ -622,7 +622,8 @@ min-height:200px;
 	background: #000;
 }
 #portfolio img {
-	width: 100%;
+	width: 400px;
+	height: 300px;
 }
 #portfolio article p {
 	margin-bottom: 1.45em;
@@ -644,7 +645,8 @@ nav#filter a {
 	color: #fff;
 }
 .portfolio-items article img {
-	width: 100%;
+	width: 400px;
+	height: 300px;
 }
 .portfolio-item {
 	display: block;
