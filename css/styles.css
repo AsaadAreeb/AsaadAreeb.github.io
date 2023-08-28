@@ -468,6 +468,7 @@ padding-bottom: 40px;
 } */
 .skillContainer{
 	margin-bottom: 50px;	
+	padding: inherit;
 	}
 .skillBox { 
 min-height:200px;
@@ -890,6 +891,7 @@ background: url(../images/bg2.png) top repeat;
 }
 .skillContainer{
 	margin-bottom: 50px;
+	padding: inherit;
 	}
 .skillBox { 
 min-height:200px;
@@ -968,7 +970,8 @@ margin-top: 30%;
 	display: inline-block !important; 
 }
 .skillContainer{
-	margin-bottom: 50px;	
+	margin-bottom: 50px;
+	padding: inherit;
 	}
 .skillBox { 
 min-height:200px;
