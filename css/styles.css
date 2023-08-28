@@ -346,12 +346,12 @@ box-shadow: 0px 3px 4px 0px rgba(50, 50, 50, 0.38);
 }
 .heading {
 	padding: 3px 10px;
-	padding-bottom: 10px;
-	margin-bottom: 15px;
+	padding-bottom: 15px;
+	margin-bottom: 20px;
 	display: block;
 }
 .pdingBtm30 {
-	padding-bottom: 30px;
+	padding-bottom: 20px;
 }
 .da-arrows span:after {
 	width: 25px;
@@ -467,8 +467,7 @@ padding-bottom: 40px;
 	margin-top: 106px;
 } */
 .skillContainer{
-	margin-bottom: 50px;	
-	padding: inherit;
+	margin-bottom: 70px;	
 	}
 .skillBox { 
 min-height:200px;
@@ -890,8 +889,7 @@ background: url(../images/bg2.png) top repeat;
 	display: inline-block !important; 
 }
 .skillContainer{
-	margin-bottom: 50px;
-	padding: inherit;
+	margin-bottom: 50px;	
 	}
 .skillBox { 
 min-height:200px;
@@ -970,8 +968,7 @@ margin-top: 30%;
 	display: inline-block !important; 
 }
 .skillContainer{
-	margin-bottom: 50px;
-	padding: inherit;
+	margin-bottom: 50px;	
 	}
 .skillBox { 
 min-height:200px;
