@@ -1,406 +1,277 @@
-<!doctype html>
-<!--[if IE 7 ]>    <html lang="en-gb" class="isie ie7 oldie no-js"> <![endif]-->
-<!--[if IE 8 ]>    <html lang="en-gb" class="isie ie8 oldie no-js"> <![endif]-->
-<!--[if IE 9 ]>    <html lang="en-gb" class="isie ie9 no-js"> <![endif]-->
-<!--[if (gt IE 9)|!(IE)]><!-->
-<html lang="en-gb" class="no-js">
-<!--<![endif]-->
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<!--[if lt IE 9]> 
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <![endif]-->
-<title>Asaad Areeb – Resume and Personal Portfolio</title>
-<!-- add icon link -->
-<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-<link rel="manifest" href="favicon/site.webmanifest">
+  <meta charset="UTF-8" />
+  <title>Muhammad Asaad Areeb – Data Scientist</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    :root {
+      --bg: #f7f7f7;
+      --card-bg: #ffffff;
+      --text: #222222;
+      --muted: #666666;
+      --accent: #2563eb;
+    }
 
+    * {
+      box-sizing: border-box;
+    }
 
-<meta name="Asaad" content="Personal site">
-<!--[if lt IE 9]>
-        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-<!--[if lte IE 8]>
-		<script type="text/javascript" src="http://explorercanvas.googlecode.com/svn/trunk/excanvas.js"></script>
-	<![endif]-->
-<link rel="stylesheet" href="css/bootstrap.min.css" />
-<link rel="stylesheet" type="text/css" href="css/isotope.css" media="screen" />
-<link rel="stylesheet" href="js/fancybox/jquery.fancybox.css" type="text/css" media="screen" />
-<link rel="stylesheet" type="text/css" href="css/da-slider.css" />
-<link rel="stylesheet" href="css/styles.css" />
-<!-- Font Awesome -->
-<link href="css/font-awesome.min.css" rel="stylesheet">
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    .wrapper {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 32px 16px 48px;
+    }
+
+    header {
+      margin-bottom: 32px;
+      border-bottom: 1px solid #e5e5e5;
+      padding-bottom: 16px;
+    }
+
+    h1 {
+      font-size: 2rem;
+      margin: 0 0 4px;
+    }
+
+    .subtitle {
+      color: var(--muted);
+      margin: 0 0 8px;
+    }
+
+    .tagline {
+      font-size: 0.98rem;
+      color: var(--muted);
+      max-width: 620px;
+    }
+
+    .contact a {
+      color: var(--accent);
+      text-decoration: none;
+      margin-right: 12px;
+      font-size: 0.95rem;
+    }
+
+    .contact a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      margin: 24px 0;
+      background: var(--card-bg);
+      padding: 20px;
+      border-radius: 8px;
+      border: 1px solid #e5e5e5;
+    }
+
+    section h2 {
+      margin-top: 0;
+      font-size: 1.25rem;
+      border-bottom: 1px solid #eee;
+      padding-bottom: 6px;
+      margin-bottom: 12px;
+    }
+
+    .experience-item,
+    .project-item {
+      margin-bottom: 16px;
+    }
+
+    .experience-item h3,
+    .project-item h3 {
+      margin: 0 0 4px;
+      font-size: 1rem;
+    }
+
+    .meta {
+      font-size: 0.85rem;
+      color: var(--muted);
+      margin-bottom: 4px;
+    }
+
+    ul {
+      margin: 8px 0 0 18px;
+      padding: 0;
+    }
+
+    li {
+      margin-bottom: 4px;
+    }
+
+    .project-links a {
+      font-size: 0.9rem;
+      color: var(--accent);
+      text-decoration: none;
+      margin-right: 10px;
+    }
+
+    .project-links a:hover {
+      text-decoration: underline;
+    }
+
+    .resume-button {
+      display: inline-block;
+      margin-top: 8px;
+      padding: 8px 14px;
+      border-radius: 999px;
+      border: 1px solid var(--accent);
+      color: var(--accent);
+      font-size: 0.95rem;
+      text-decoration: none;
+    }
+
+    .resume-button:hover {
+      background: var(--accent);
+      color: white;
+    }
+
+    @media (max-width: 600px) {
+      .wrapper {
+        padding: 24px 14px 32px;
+      }
+
+      h1 {
+        font-size: 1.6rem;
+      }
+    }
+  </style>
 </head>
-
 <body>
-<header class="header">
-  <div class="container">
-    <nav class="navbar navbar-inverse" role="navigation">
-      <div class="navbar-header">
-        <button type="button" id="nav-toggle" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-        <a href="#" class="navbar-brand scroll-top logo"><b>Me..</b></a> </div>
-      <!--/.navbar-header-->
-      <div id="main-nav" class="collapse navbar-collapse">
-        <ul class="nav navbar-nav" id="mainNav">
-          <li class="active"><a href="#home" class="scroll-link">Home</a></li>
-          <li><a href="#aboutMe" class="scroll-link">About</a></li>
-          <li><a href="#skills" class="scroll-link">Skills</a></li>
-          <li><a href="#experience" class="scroll-link">Experience</a></li>
-          <li><a href="#portfolio" class="scroll-link">Portfolio</a></li>
-          <!-- <li><a href="#contactUs" class="scroll-link">Contact</a></li> -->
-        </ul>
+  <div class="wrapper">
+    <header>
+      <h1>Muhammad Asaad Areeb</h1>
+      <p class="subtitle">Data Scientist – NLP & LLM Systems</p>
+      <p class="tagline">
+        Data Scientist with hands-on experience in NLP, deep learning, and LLM-based systems, focused on
+        building reliable, production-ready pipelines for real-world use cases.
+      </p>
+      <div class="contact">
+        <a href="mailto:asaadareeb773@gmail.com">asaadareeb773@gmail.com</a>
+        <a href="https://www.linkedin.com" target="_blank">LinkedIn</a>
+        <a href="https://github.com/AsaadAreeb" target="_blank">GitHub</a>
+        <a href="Asaad_Areeb_CV.pdf" class="resume-button" target="_blank">Download CV</a>
       </div>
-      <!--/.navbar-collapse--> 
-    </nav>
-    <!--/.navbar--> 
-  </div>
-  <!--/.container--> 
-</header>
-<!--/.header-->
-<div id="#top"></div>
-<section id="home">
-  <div class="banner-container"> <img src="images/banner-bg.jpg" alt="banner" />
-    <div class="container banner-content">
-      <div class="heroText">
-        <h2><span>HEllo, I'm</span><br>
-          Asaad Areeb</h2>
-        <span class="caption">ML Engineer / Web Developer</span> </div>
-    </div>
-  </div>
-</section>
-<section id="introText">
-  <div class="container">
-    <div>
-      <h1>research interests: CV, Pattern recognition and Transformers</h1>
-    </div>
-  </div>
-</section>
-<!--About-->
-<section id="aboutMe">
-  <div class="container">
-    <div class="row"> 
-      <!-- item -->
-      <!-- <div class="col-md-4 tileBox">
-        <img src="images/photo-1.jpg" alt="me"/>
-      </div> -->
-      <div class="col-md-8 tileBox">
-        <div class="txtHead">
-          <h2>I am Asaad Areeb,</h2>
-          <h3> ML Engineer / Web Developer Based in Lahore, PK.</h3>
-        </div>
-        <div class="row"> <!-- Create a new row for the full-width paragraph -->
-          <div class="col-md-12"> <!-- Use col-md-12 to cover full width -->
-            <p> Bachelors in Software Engineering from Khwaja Fareed UEIT, RYK 
-            <br/><br/>
-            I completed my internship at Hello World Technologies in RYK. Currently, I have been honing my research skills and undertaking side projects in the field of machine learning. This is in preparation for my desired pursuit of a master's degree in this field.
-            </p>
-          </div>
-        </div>
-      </div>
-      <!-- end: --> 
-    </div>
-  </div>
-</section>
-<!--Quote-->
-<section id="quote" class="bg-parlex">
-  <div class="parlex-back">
-    <div class="container">
-     <div class="row">
-      <div class="col-md-12">
-        <h2 style="text-align: center;">“AI is the new electricity – enabling us to do more.”
-          <br>
-          <span style="display: block; text-align: right;">– Andrew Ng</span>
-        </h2>
-      </div>
-      </div>
-    </div>
-    <!--/.container--> 
-  </div>
-</section>
+    </header>
 
-<!--Skills-->
-<section id="skills" class="secPad white">
-  <div class="container">
-    <div class="heading"> 
-      <!-- Heading -->
-      <h2>My Skills</h2>
-    </div>
-    <div class="row skillContainer">
-      <div class="col-md-3">
-        <h4>Machine Learning Algorithms</h4>
-      </div>
-      <div class="col-md-3">
-        <h4>Web Developement</h4>
-      </div>
-      <div class="col-md-3">
-        <h4>Data Manipulation and Analysis</h4>
-      </div>
-      <div class="col-md-3">
-        <h4>Deep Learning</h4>
-      </div>
-    </div>
+    <section id="about">
+      <h2>About</h2>
+      <p>
+        Data Scientist with a Master's in Data Science and a background in Software Engineering, specializing in
+        NLP, transformer-based models, and LLM systems. Worked at SPIDER Lab under the supervision of
+        Dr. Ali Ahmed, Chairperson of the Department of Computer Science at ITU Lahore. [file:21][web:31]
+      </p>
+    </section>
 
-    <div class="heading">
-      <h2>Programming Skills</h2>
-    </div>
-    <div class="row">
-      <div class="col-sm-6">
-        <p class="mrgBtm20"> 
-          I have utilized Python extensively for web development, primarily employing the Django framework. Additionally, I've employed Python for data collection and cleaning tasks through libraries such as NumPy and Pandas. I possess a basic understanding of C++, which has enabled me to manage system-level operations and develop simple applications. As for PyTorch, my proficiency extends to building encoder-decoder models, experimenting with transformers and their intricate multi-attention heads, and successfully working with the GPT (Generative Pre-trained Transformer) model using PyTorch. These combined skills empower me to undertake a wide array of projects, spanning data science, AI, and software development.</p>
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="experience-item">
+        <h3>Core technologies</h3>
+        <p class="meta">Python · PyTorch · TensorFlow · Hugging Face · Scikit-learn · SQL</p>
       </div>
-      <div class="col-sm-6 ">
-        <div class="row">
-          <div class="col-md-2 skilltitle"><b>Python</b></div>
-          <div class="col-md-10">
-            <div class="progress">
-              <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%;"> <span class="sr-only">70% Complete</span> </div>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-2 skilltitle"><b>C++</b></div>
-          <div class="col-md-10">
-            <div class="progress">
-              <div class="progress-bar" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%;"> <span class="sr-only">40% Complete</span> </div>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-2 skilltitle"><b>Keras</b></div>
-          <div class="col-md-10">
-            <div class="progress">
-              <div class="progress-bar" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" style="width: 65%;"> <span class="sr-only">65% Complete</span> </div>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-2 skilltitle"><b>Pytorch</b></div>
-          <div class="col-md-10">
-            <div class="progress">
-              <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%;"> <span class="sr-only">70% Complete</span> </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!--Experience-->
-<section id="experience" class="secPad">
-<div class="container">
-<div class="heading"> 
-  <!-- Heading -->
-  <h2>Experience</h2>
-  <br/>
-  <h4>1 Year Experience</h4>
-  <p>Currently, I am working as a Django Web developer on Fiverr.</p>
-</div>
-<div class="row experience-details">
-  <!-- <div class="col-md-6">
-    <div class="col-md-5">
-      <div class="icon-block"><i class="fa"><img src="fonts\fiverr-custom.svg" alt="#"></i></div>
-      <div class="pull-left">
-        <h5>Fiverr</h5>
-        <h5>Web developer</h5>
-        <span>2022 - Present</span> </div>
-    </div>
-    <div class="col-md-7"> Duis quis feugiat neque. Pellentesque eleifend, nisi vel mattis vestibulum, est lacus pretium quam. </div>
-  </div> -->
-  <div class="col-md-6">
-    <div class="col-md-5">
-      <div class="icon-block"><i class="fa fa-facebook"></i></div>
-      <div class="pull-left">
-        <h5>Fiverr</h5>
-        <h5>Web developer</h5>
-        <span>2022 - Present</span> </div>
-    </div>
-    <!-- <div class="col-md-7"> Duis quis feugiat neque. Pellentesque eleifend, nisi vel mattis vestibulum, est lacus pretium quam. </div> -->
-  </div>
-</div>
-</section>
-
-<!--Portfolio-->
-<section id="portfolio" class="page-section section appear clearfix secPad">
-  <div class="container">
-    <div class="heading"> 
-      <!-- Heading -->
-      <h2>Portfolio</h2>
-    </div>
-    <div class="row">
-      <nav id="filter" class="col-md-12">
+      <div class="experience-item">
+        <h3>LLM systems & agentic AI</h3>
         <ul>
-          <li><a href="#" class="current btn-theme btn-small" data-filter="*">All</a></li>
-          <li><a href="#" class="btn-theme btn-small" data-filter=".ml">ML projects</a></li>
-          <li><a href="#" class="btn-theme btn-small" data-filter=".webdesign">Web projects</a></li>
-          <!-- <li><a href="#" class="btn-theme btn-small" data-filter=".print">Print</a></li> -->
+          <li>Context window and long-context chunking & retrieval.</li>
+          <li>Memory management, embedding-based knowledge storage, and vector databases (FAISS, Pinecone, Weaviate).</li>
+          <li>Tool-calling, agent orchestration, and prompt templates/control flows.</li>
+          <li>Error handling, hallucination mitigation, and evaluation of agent reliability.</li>
         </ul>
-      </nav>
-      <div class="col-md-12">
-        <div class="row">
-          <div class="portfolio-items isotopeWrapper clearfix" id="3">
-            <article class="col-sm-4 isotopeItem ml">
-              <div class="portfolio-item"> <img src="images\portfolio\ML\chatbot\chatbot.webp" alt="" class="fixed-size-image"/>
-                <div class="portfolio-desc align-center">
-                  <div class="folio-info"> <a href="images/portfolio/img3.jpg" class="fancybox">
-                    <h5>ChatBot</h5>
-                    <i class="fa fa-plus-square-o fa-2x"></i></a> </div>
-                </div>
-              </div>
-            </article>
-            <article class="col-sm-4 isotopeItem ml">
-              <div class="portfolio-item"> <img src="images\portfolio\ML\namegenerator\namegenerate.png" alt="" class="fixed-size-image"/>
-                <div class="portfolio-desc align-center">
-                  <div class="folio-info"> <a href="images/portfolio/img3.jpg" class="fancybox">
-                    <h5>Name Generator</h5>
-                    <i class="fa fa-plus-square-o fa-2x"></i></a> </div>
-                </div>
-              </div>
-            </article>
-            <article class="col-sm-4 isotopeItem ml">
-              <div class="portfolio-item"> <img src="images\portfolio\ML\textgenerator\textgenerator.jpeg" alt="" class="fixed-size-image"/>
-                <div class="portfolio-desc align-center">
-                  <div class="folio-info"> <a href="images/portfolio/img3.jpg" class="fancybox">
-                    <h5>Custom Style Text Generator</h5>
-                    <i class="fa fa-plus-square-o fa-2x"></i></a> </div>
-                </div>
-              </div>
-            </article>
-            <article class="col-sm-4 isotopeItem webdesign">
-              <div class="portfolio-item"> <img src="images\portfolio\WEB\ecommerce\Shop.png" alt="" class="fixed-size-image"/>
-                <div class="portfolio-desc align-center">
-                  <div class="folio-info"> <a href="images/portfolio/img6.jpg" class="fancybox">
-                    <h5>ShopSynced</h5>
-                    <i class="fa fa-plus-square-o fa-2x"></i></a> </div>
-                </div>
-              </div>
-            </article>
-            <article class="col-sm-4 isotopeItem ml">
-              <div class="portfolio-item"> <img src="images\portfolio\ML\nameclassifier\name.webp" alt="" class="fixed-size-image"/>
-                <div class="portfolio-desc align-center">
-                  <div class="folio-info"> <a href="images/portfolio/img3.jpg" class="fancybox">
-                    <h5>Name Classifier</h5>
-                    <i class="fa fa-plus-square-o fa-2x"></i></a> </div>
-                </div>
-              </div>
-            </article>
-            <article class="col-sm-4 isotopeItem ml">
-              <div class="portfolio-item"> <img src="images\portfolio\ML\faceverify\siamese.webp" alt="" class="fixed-size-image"/>
-                <div class="portfolio-desc align-center">
-                  <div class="folio-info">
-                    <a href="images\portfolio\ML\faceverify\faceverifydes.PNG" class="fancybox">
-                      <h5>Face Verify</h5>
-                      <i class="fa fa-plus-square-o fa-2x"></i>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </article>
-            <article class="col-sm-4 isotopeItem webdesign">
-              <div class="portfolio-item"> <img src="images\portfolio\WEB\blog\django.png" alt="" class="fixed-size-image"/>
-                <div class="portfolio-desc align-center">
-                  <div class="folio-info"> <a href="images/portfolio/img4.jpg" class="fancybox">
-                    <h5>Blogging Site</h5>
-                    <i class="fa fa-plus-square-o fa-2x"></i></a> </div>
-                </div>
-              </div>
-            </article>
-            <article class="col-sm-4 isotopeItem ml">
-              <div class="portfolio-item"> <img src="images\portfolio\ML\dogclassify\doggo.jpg" alt="" class="fixed-size-image"/>
-                <div class="portfolio-desc align-center">
-                  <div class="folio-info">
-                    <a href="images\portfolio\ML\dogclassify\dogclassify.PNG" class="fancybox">
-                      <h5>Dog breed classification</h5>
-                      <i class="fa fa-plus-square-o fa-2x"></i>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </article>
-            
-            
-            
-            
-            
-            <!-- <article class="col-sm-4 isotopeItem ml">
-              <div class="portfolio-item"> <img src="images/portfolio/img5.jpg" alt="" />
-                <div class="portfolio-desc align-center">
-                  <div class="folio-info"> <a href="images/portfolio/img5.jpg" class="fancybox">
-                    <h5>Project Name</h5>
-                    <i class="fa fa-plus-square-o fa-2x"></i></a> </div>
-                </div>
-              </div>
-            </article> -->
-            
-            <!-- <article class="col-sm-4 isotopeItem print">
-              <div class="portfolio-item"> <img src="images/portfolio/img7.jpg" alt="" />
-                <div class="portfolio-desc align-center">
-                  <div class="folio-info"> <a href="images/portfolio/img7.jpg" class="fancybox">
-                    <h5>Project Name</h5>
-                    <i class="fa fa-plus-square-o fa-2x"></i></a> </div>
-                </div>
-              </div>
-            </article> -->
-            <!-- <article class="col-sm-4 isotopeItem ml">
-              <div class="portfolio-item"> <img src="images/portfolio/img8.jpg" alt="" />
-                <div class="portfolio-desc align-center">
-                  <div class="folio-info"> <a href="images/portfolio/img8.jpg" class="fancybox">
-                    <h5>Project Name</h5>
-                    <i class="fa fa-plus-square-o fa-2x"></i></a> </div>
-                </div>
-              </div>
-            </article> -->
-            <!-- <article class="col-sm-4 isotopeItem print">
-              <div class="portfolio-item"> <img src="images/portfolio/img9.jpg" alt="" />
-                <div class="portfolio-desc align-center">
-                  <div class="folio-info"> <a href="images/portfolio/img9.jpg" class="fancybox">
-                    <h5>Project Name</h5>
-                    <i class="fa fa-plus-square-o fa-2x"></i></a> </div>
-                </div>
-              </div>
-            </article> -->
-          </div>
-        </div>
       </div>
-    </div>
-  </div>
-</section>
-
-<!--Contact -->
-
-
-<!--/.page-section-->
-<footer class="copyright">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-6">
-        <div class="social pull-left">
-          <!-- <a href="#"><i class="fa fa-twitter"></i></a> -->
-          <!-- <a href="#"><i class="fa fa-facebook"></i></a> -->
-          <!-- <a href="#"><i class="fa fa-dribbble"></i></a> -->
-          <!-- <a href="#"><i class="fa fa-flickr"></i></a> -->
-          <a href="https://github.com/AsaadAreeb"><i class="fa fa-github"></i></a>
-        </div>
+      <div class="experience-item">
+        <h3>NLP & modeling</h3>
+        <ul>
+          <li>Text classification, NER, semantic search, and RAG-style retrieval.</li>
+          <li>LLM fine-tuning (LoRA and full fine-tuning) and prompt engineering.</li>
+          <li>Evaluation using BLEU, ROUGE, perplexity, and custom metrics.</li>
+        </ul>
       </div>
-    </div>
-    <!-- / .row --> 
-  </div>
-</footer>
-<a href="#top" class="topHome"><i class="fa fa-chevron-up fa-2x"></i></a> 
+    </section>
 
-<!--[if lte IE 8]><script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script><![endif]--> 
-<script src="js/modernizr-latest.js"></script> 
-<script src="js/jquery-1.8.2.min.js" type="text/javascript"></script> 
-<script src="js/bootstrap.min.js" type="text/javascript"></script> 
-<script src="js/jquery.isotope.min.js" type="text/javascript"></script> 
-<script src="js/fancybox/jquery.fancybox.pack.js" type="text/javascript"></script> 
-<script src="js/jquery.nav.js" type="text/javascript"></script> 
-<script src="js/jquery.cslider.js" type="text/javascript"></script> 
-<script src="js/jquery.diagram.js"></script> 
-<script src="js/custom.js" type="text/javascript"></script> 
-<script src="js/owl-carousel/owl.carousel.js"></script>
+    <section id="experience">
+      <h2>Experience</h2>
+
+      <div class="experience-item">
+        <h3>Data Scientist – Denim Loom</h3>
+        <div class="meta">May 2025 – Present · Lahore</div>
+        <ul>
+          <li>Develop NLP-driven analytics pipelines to extract insights from unstructured operational and product data.</li>
+          <li>Build and fine-tune transformer-based models for semantic search and text classification.</li>
+          <li>Implement embedding-based retrieval with FAISS for internal knowledge search and recommendations.</li>
+          <li>Design evaluation workflows using BLEU, ROUGE, and perplexity to track model quality and reliability.</li>
+        </ul>
+      </div>
+
+      <div class="experience-item">
+        <h3>Graduate Fellow – SPIDER Lab, ITU Lahore</h3>
+        <div class="meta">
+          Feb 2025 – Jun 2025 · Lahore · Supervised by Dr. Ali Ahmed (Chairperson, Department of Computer Science)
+        </div>
+        <ul>
+          <li>Conducted applied research in signal processing, machine learning, and NLP within the SPIDER Lab at ITU.</li>
+          <li>Fine-tuned large language models using LoRA to improve task-specific performance and robustness.</li>
+          <li>Built end-to-end ML pipelines covering data preprocessing, training, evaluation, and reporting.</li>
+          <li>Analyzed failure cases and error patterns using standard NLP and ML evaluation metrics.</li>
+        </ul>
+      </div>
+
+      <div class="experience-item">
+        <h3>Data Scientist – Technoventures</h3>
+        <div class="meta">Oct 2023 – Dec 2024</div>
+        <ul>
+          <li>Automated structured and semi-structured data pipelines for analytics and ML readiness.</li>
+          <li>Performed EDA and feature engineering to support predictive models.</li>
+          <li>Prepared clean datasets and baseline ML models for early-stage product experiments.</li>
+          <li>Built dashboards and reports to communicate insights to business and technical stakeholders.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2>Selected Projects</h2>
+
+      <div class="project-item">
+        <h3>Semantic Search & Knowledge Base</h3>
+        <div class="meta">Tech: Python, Hugging Face, FAISS</div>
+        <p>
+          Built an embedding-based semantic search system for internal documentation, enabling
+          natural-language queries over heterogeneous knowledge sources. [file:21]
+        </p>
+      </div>
+
+      <div class="project-item">
+        <h3>LLM Evaluation & Monitoring Pipeline</h3>
+        <div class="meta">Tech: Python, Transformers, ML metrics</div>
+        <p>
+          Designed evaluation workflows for LLM outputs using BLEU, ROUGE, perplexity, and custom checks
+          to monitor reliability and reduce hallucinations in production-like setups. [file:21]
+        </p>
+      </div>
+
+      <div class="project-item">
+        <h3>End-to-end ML Experimentation Stack</h3>
+        <div class="meta">Tech: Python, Scikit-learn, dashboards</div>
+        <p>
+          Implemented repeatable pipelines for data preprocessing, model training, and reporting to
+          accelerate early-stage product experiments and stakeholder feedback. [file:21]
+        </p>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>
+        Open to roles in data science, NLP, and LLM-focused engineering. The best way to reach me is via email:
+        <a href="mailto:asaadareeb773@gmail.com">asaadareeb773@gmail.com</a>.
+      </p>
+    </section>
+  </div>
 </body>
 </html>
