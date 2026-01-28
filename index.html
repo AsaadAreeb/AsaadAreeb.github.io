@@ -4,6 +4,17 @@
   <meta charset="UTF-8" />
   <title>Muhammad Asaad Areeb - Data Scientist</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+  <!-- Favicons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+  <link rel="manifest" href="/favicon/site.webmanifest">
+  <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="shortcut icon" href="/favicon/favicon.ico">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  
   <style>
     :root {
       --bg: #f7f7f7;
@@ -111,10 +122,23 @@
       color: var(--accent);
       text-decoration: none;
       margin-right: 10px;
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
     }
 
     .project-links a:hover {
       text-decoration: underline;
+    }
+
+    .live-project-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      padding: 4px 8px;
+      background: #f0f7ff;
+      border-radius: 4px;
+      margin-top: 6px;
     }
 
     .resume-button {
@@ -171,71 +195,70 @@
     </section>
 
     <section id="skills">
-  <h2>Skills</h2>
+      <h2>Skills</h2>
 
-  <div class="experience-item">
-    <h3>Programming & ecosystem</h3>
-    <p class="meta">
-      Python · SQL · FastAPI · React · Node.js · Bash scripting · Git
-    </p>
-  </div>
+      <div class="experience-item">
+        <h3>Programming & ecosystem</h3>
+        <p class="meta">
+          Python · SQL · FastAPI · React · Node.js · Bash scripting · Git
+        </p>
+      </div>
 
-  <div class="experience-item">
-    <h3>ML, DL & model development</h3>
-    <ul>
-      <li>Classical ML with Scikit-learn (classification, regression, feature engineering, evaluation).</li>
-      <li>Deep learning with PyTorch and TensorFlow for NLP and computer vision models.</li>
-      <li>CNNs for detection/segmentation (ENet, DeepLab v3+, YOLOv5, custom lightweight CNNs).</li>
-      <li>Deployment to edge devices using ONNX and TensorFlow Lite (Raspberry Pi)</li>
-    </ul>
-  </div>
+      <div class="experience-item">
+        <h3>ML, DL & model development</h3>
+        <ul>
+          <li>Classical ML with Scikit-learn (classification, regression, feature engineering, evaluation).</li>
+          <li>Deep learning with PyTorch and TensorFlow for NLP and computer vision models.</li>
+          <li>CNNs for detection/segmentation (ENet, DeepLab v3+, YOLOv5, custom lightweight CNNs).</li>
+          <li>Deployment to edge devices using ONNX and TensorFlow Lite (Raspberry Pi)</li>
+        </ul>
+      </div>
 
-  <div class="experience-item">
-    <h3>NLP, LLMs & RAG</h3>
-    <ul>
-      <li>Transformer-based NLP with Hugging Face (RoBERTa, Llama 2, custom classifiers and generators).</li>
-      <li>LLM fine-tuning with LoRA and full fine-tuning on domain-specific datasets.</li>
-      <li>RAG systems with embeddings (OpenAI, MiniLM), Pinecone/Chroma, context chunking, and prompt design.</li>
-      <li>Agentic workflows: tool-calling, orchestration, long-context management, and memory management.</li>
-    </ul>
-  </div>
+      <div class="experience-item">
+        <h3>NLP, LLMs & RAG</h3>
+        <ul>
+          <li>Transformer-based NLP with Hugging Face (RoBERTa, Llama 2, custom classifiers and generators).</li>
+          <li>LLM fine-tuning with LoRA and full fine-tuning on domain-specific datasets.</li>
+          <li>RAG systems with embeddings (OpenAI, MiniLM), Pinecone/Chroma, context chunking, and prompt design.</li>
+          <li>Agentic workflows: tool-calling, orchestration, long-context management, and memory management.</li>
+        </ul>
+      </div>
 
-  <div class="experience-item">
-    <h3>Computer vision & edge AI</h3>
-    <ul>
-      <li>Image preprocessing and classical vision (OpenCV, Hough transforms, custom thresholding).</li>
-      <li>Object detection and segmentation for fire, potholes, and lane detection (YOLOv5, DeepLab v3+, ENet).</li>
-      <li>Face detection and liveness/emotion recognition on edge hardware using lightweight CNNs.</li>
-    </ul>
-  </div>
+      <div class="experience-item">
+        <h3>Computer vision & edge AI</h3>
+        <ul>
+          <li>Image preprocessing and classical vision (OpenCV, Hough transforms, custom thresholding).</li>
+          <li>Object detection and segmentation for fire, potholes, and lane detection (YOLOv5, DeepLab v3+, ENet).</li>
+          <li>Face detection and liveness/emotion recognition on edge hardware using lightweight CNNs.</li>
+        </ul>
+      </div>
 
-  <div class="experience-item">
-    <h3>Data analysis & graph/network analytics</h3>
-    <ul>
-      <li>Designing data pipelines from raw ingestion to clean, model-ready datasets and analytical dashboards.</li>
-      <li>Network analysis of social conversations with NodeXL and social media APIs (Twitter, YouTube, Facebook).</li>
-      <li>Building monitoring and evaluation dashboards for ML/LLM systems and experiments.</li>
-    </ul>
-  </div>
+      <div class="experience-item">
+        <h3>Data analysis & graph/network analytics</h3>
+        <ul>
+          <li>Designing data pipelines from raw ingestion to clean, model-ready datasets and analytical dashboards.</li>
+          <li>Network analysis of social conversations with NodeXL and social media APIs (Twitter, YouTube, Facebook).</li>
+          <li>Building monitoring and evaluation dashboards for ML/LLM systems and experiments.</li>
+        </ul>
+      </div>
 
-  <div class="experience-item">
-    <h3>Explainability & evaluation</h3>
-    <ul>
-      <li>Evaluation metrics for NLP/LLMs: BLEU, ROUGE, perplexity, task-specific and human-in-the-loop reviews.</li>
-      <li>XAI for LLMs using SHAP, attention-map visualizations, and analysis of model behavior.</li>
-    </ul>
-  </div>
+      <div class="experience-item">
+        <h3>Explainability & evaluation</h3>
+        <ul>
+          <li>Evaluation metrics for NLP/LLMs: BLEU, ROUGE, perplexity, task-specific and human-in-the-loop reviews.</li>
+          <li>XAI for LLMs using SHAP, attention-map visualizations, and analysis of model behavior.</li>
+        </ul>
+      </div>
 
-  <div class="experience-item">
-    <h3>Backend, integrations & tooling</h3>
-    <ul>
-      <li>Building APIs and services with FastAPI and PostgreSQL/SQLite backends.</li>
-      <li>Cloud and integrations: Google Cloud Functions, Speech-to-Text, Text-to-Speech, Google Calendar API.</li>
-      <li>Document ingestion and orchestration with LlamaIndex, OCR/text parsing, and admin dashboards.</li>
-    </ul>
-  </div>
-</section>
-
+      <div class="experience-item">
+        <h3>Backend, integrations & tooling</h3>
+        <ul>
+          <li>Building APIs and services with FastAPI and PostgreSQL/SQLite backends.</li>
+          <li>Cloud and integrations: Google Cloud Functions, Speech-to-Text, Text-to-Speech, Google Calendar API.</li>
+          <li>Document ingestion and orchestration with LlamaIndex, OCR/text parsing, and admin dashboards.</li>
+        </ul>
+      </div>
+    </section>
 
     <section id="experience">
       <h2>Experience</h2>
@@ -360,8 +383,50 @@
           Developed an end-to-end system for law firms that ingests case documents, extracts key dates, syncs deadlines to Google Calendar, and provides an authenticated chatbot for case updates.
         </p>
       </div>
+    </section>
 
-      <!-- You can add more small project cards from the PDF here if you like -->
+    <!-- New Live Projects Section -->
+    <section id="live-projects">
+      <h2>Live Projects</h2>
+
+      <div class="project-item">
+        <h3>Lume - Brand Website</h3>
+        <div class="meta">Tech: React, Next.js, Tailwind CSS, Node.js</div>
+        <p>
+          Created the complete website for Lume, a company under Denim Loom, featuring modern design, responsive layout, and seamless user experience.
+        </p>
+        <div class="project-links">
+          <a href="https://lume.denimloom.com/" target="_blank">
+            🌐 Visit Lume Website
+          </a>
+        </div>
+      </div>
+
+      <div class="project-item">
+        <h3>QR 3D Menu System</h3>
+        <div class="meta">Tech: React, Three.js, 3D Modeling, Node.js, MongoDB</div>
+        <p>
+          Developed an interactive 3D QR menu system that allows restaurants to showcase their menu in an engaging 3D format. Users can scan QR codes to view and interact with 3D food models.
+        </p>
+        <div class="project-links">
+          <a href="https://qrmenu.denimloom.com/" target="_blank">
+            🍽️ View QR Menu System
+          </a>
+        </div>
+      </div>
+
+      <div class="project-item">
+        <h3>Denim Loom - Manufacturing Website</h3>
+        <div class="meta">Tech: React, Next.js, Tailwind CSS, Content Management</div>
+        <p>
+          Built the official website for Denim Loom, a leading denim manufacturer. The website showcases their products, manufacturing capabilities, and serves as a platform for B2B clients.
+        </p>
+        <div class="project-links">
+          <a href="https://denimloom.com/" target="_blank">
+            👖 Visit Denim Loom Website
+          </a>
+        </div>
+      </div>
     </section>
 
     <section id="contact">
