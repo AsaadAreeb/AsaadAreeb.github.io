@@ -15,12 +15,17 @@ Muhammad Asaad Areeb is an AI systems engineer and data scientist specialising i
 MSc Data Science
 Graduate Fellow — SPIDER Lab, ITU (Feb 2025 – Aug 2025)
 
-## Current position
-Data Analyst, Denim Loom (Jan 2025 – Present)
+## Current and previous positions
+- Data Analyst, Denim Loom (Jan 2025 – Present)
+- Graduate Fellow, SPIDER Lab, ITU (Feb 2025 – Aug 2025)
+- Data Scientist, Technoventures (Oct 2023 – May 2024)
+- Web Developer, Minisoft (Sep 2022 – Sep 2023)
+- Mobile App Developer Intern, Hello World (Apr 2022 – Jun 2022)
 
 ## Site structure
 - /index.html      — Home, specialist identity, featured work
-- /services.html   — AI and BI services with AEO FAQ
+- /services.html   — AI and BI services with visible answer blocks and FAQ
+- /products.html   — Productized AI systems: email triage, private RAG, manufacturing BI
 - /projects.html   — Production AI and ML project case studies
 - /about.html      — Biography, research, skills, experience
 - /blog.html       — Technical articles on LLM, RAG, Power BI
