@@ -41,6 +41,24 @@
 @media (min-width:1500px){:root{--container:1440px}.hero{grid-template-columns:minmax(0,1.2fr) minmax(420px,.8fr)}.section{padding-block:clamp(3.5rem,6vw,6.5rem)}}
 @media (max-width:640px){h1{font-size:clamp(2.25rem,13vw,3.5rem)}h2{font-size:clamp(1.8rem,9vw,2.65rem)}.hero-visual{display:none}.button-row .btn{width:100%;justify-content:center}.trust-strip span{width:100%}.filter-bar a{flex:1 1 auto;text-align:center}.section,.section.compact{padding-block:2.25rem}.card{padding:1rem}.authorship{margin-top:1.25rem}.footer-links{display:grid;grid-template-columns:1fr 1fr;gap:.65rem}.product-card h3,.domain-card h3,.project-card h3,.article-card h3{font-size:1.45rem}.pill{line-height:1.35}}
 .experience-strip{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:.75rem;margin-top:1.25rem}.experience-mini{border:1px solid var(--color-border);border-radius:var(--radius);background:var(--color-surface-2);padding:1rem}.experience-mini time{display:block;color:var(--color-accent);font-size:var(--text-xs);font-weight:700;margin-bottom:.35rem}.experience-mini strong{display:block;line-height:1.25}.experience-mini span{display:block;color:var(--color-muted);font-size:var(--text-sm);margin-top:.35rem}.product-hero{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(320px,.95fr);gap:clamp(1rem,3vw,2rem);align-items:start}.product-detail{display:grid;gap:1rem}.product-detail .card h3{font-size:1.7rem}.product-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(1rem,2vw,1.35rem)}@media (max-width:900px){.product-hero,.product-grid{grid-template-columns:1fr}}
+
+
+/* Page-specific v4 improvements: wider desktop use, real-photo slot, less centered content */
+.about-wide{max-width:1540px;margin-inline:auto;padding-inline:clamp(1rem,2.8vw,3rem)}
+.about-hero-layout{display:grid;grid-template-columns:minmax(280px,390px) minmax(0,1.05fr) minmax(260px,340px);gap:clamp(1.25rem,2.5vw,2.75rem);align-items:start}
+.about-copy{max-width:980px}.about-copy .lead{max-width:980px}.about-copy h1{max-width:1080px}
+.portrait-frame{position:sticky;top:calc(var(--nav-height) + 1rem);border:1px solid var(--color-border);border-radius:1rem;background:linear-gradient(180deg,var(--color-surface),var(--color-surface-2));overflow:hidden;min-height:540px;display:grid;align-items:end}
+.portrait-frame picture,.portrait-frame img{display:block;width:100%;height:100%}.portrait-frame img{min-height:540px;object-fit:cover;object-position:center top;filter:saturate(.96) contrast(1.02)}
+.portrait-frame.no-photo{place-items:center;text-align:left;padding:1.25rem}.portrait-frame.no-photo::before{content:'Add your portrait at assets/asaad-areeb.jpg';display:block;width:100%;padding:1.1rem;border:1px dashed var(--color-border);border-radius:.75rem;color:var(--color-muted);background:var(--color-surface-2)}
+.portrait-caption{position:absolute;left:1rem;right:1rem;bottom:1rem;padding:.75rem;border:1px solid var(--color-border);border-radius:.75rem;background:color-mix(in srgb,var(--color-bg) 76%,transparent);backdrop-filter:blur(10px);font-size:var(--text-sm);color:var(--color-muted)}
+.profile-facts{display:grid;gap:.75rem}.profile-fact{border:1px solid var(--color-border);border-radius:var(--radius);background:var(--color-surface);padding:1rem}.profile-fact span{display:block;color:var(--color-accent);font-size:var(--text-xs);font-weight:800;letter-spacing:.08em;text-transform:uppercase;margin-bottom:.35rem}.profile-fact strong{display:block;font-size:1rem;line-height:1.35}.profile-fact p{font-size:var(--text-sm);margin:.35rem 0 0}
+.about-actions{display:flex;flex-wrap:wrap;gap:.75rem;margin-top:1.4rem}.about-timeline-layout{display:grid;grid-template-columns:minmax(300px,.78fr) minmax(0,1.22fr);gap:clamp(1.25rem,2.5vw,2.75rem);align-items:start}.about-section-head{max-width:860px;margin-bottom:1.5rem}.timeline-card{border:1px solid var(--color-border);border-radius:1rem;background:var(--color-surface);padding:clamp(1rem,2vw,1.5rem)}
+.skill-dl.wide-skills{grid-template-columns:repeat(4,minmax(0,1fr));gap:1rem}.skill-dl.wide-skills div{min-height:138px}.skill-dl dt{font-size:var(--text-sm);line-height:1.35}.skill-dl dd{font-size:var(--text-sm);line-height:1.6}
+.contact-wide{max-width:1480px;margin-inline:auto;padding-inline:clamp(1rem,2.8vw,3rem)}.contact-layout{display:grid;grid-template-columns:minmax(0,.9fr) minmax(460px,1.1fr);gap:clamp(1.25rem,3vw,3rem);align-items:start}.contact-panel{border:1px solid var(--color-border);border-radius:1rem;background:var(--color-surface);padding:clamp(1rem,2.2vw,1.75rem)}.form-note{font-size:var(--text-sm);color:var(--color-muted);margin-top:1rem}.hidden-honey{position:absolute!important;left:-9999px!important;opacity:0!important;height:0!important;width:0!important;pointer-events:none!important}
+.submit-success{display:none;margin-top:1rem;border:1px solid var(--color-border);border-radius:var(--radius);background:var(--color-accent-bg);padding:1rem;color:var(--color-muted)}.submit-success:target{display:block}
+@media (max-width:1180px){.about-hero-layout{grid-template-columns:320px minmax(0,1fr)}.profile-facts{grid-column:1/-1;grid-template-columns:repeat(3,minmax(0,1fr))}.about-timeline-layout{grid-template-columns:1fr}.skill-dl.wide-skills{grid-template-columns:repeat(2,minmax(0,1fr))}.contact-layout{grid-template-columns:1fr}}
+@media (max-width:720px){.about-wide,.contact-wide{padding-inline:1rem}.about-hero-layout{grid-template-columns:1fr}.portrait-frame{position:relative;top:auto;min-height:420px}.portrait-frame img{min-height:420px}.profile-facts{grid-template-columns:1fr}.skill-dl.wide-skills{grid-template-columns:1fr}.about-actions .btn{width:100%;justify-content:center}.contact-panel{padding:1rem}.contact-form button{width:100%}}
+
 </style>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Muhammad Asaad Areeb","url":"https://asaadareeb.github.io","jobTitle":"AI Systems Engineer and LLM Specialist","description":"AI engineer specialising in production LLM systems, RAG pipelines, agentic workflows, Power BI dashboards, and applied ML research.","email":"asaadareeb773@gmail.com","knowsAbout":["Large Language Models","RAG systems","LLM fine-tuning","LoRA","Power BI","NLP pipelines","agentic AI","computer vision","FastAPI","LlamaIndex","Pinecone","Chroma","MiniLM","SQL Server","DAX","star schema","YOLOv5","ONNX","TensorFlow Lite","RoBERTa","BLEU","ROUGE","SHAP","perplexity","attention visualization","GCP Speech-to-Text","Google Calendar API","PostgreSQL","AWS S3","Power Query","Zoho CRM","Django","Node.js","React Native"],"hasCredential":{"@type":"EducationalOccupationalCredential","credentialCategory":"Masters Degree","educationalLevel":"MSc Data Science"},"alumniOf":{"@type":"CollegeOrUniversity","name":"Information Technology University (ITU)"},"worksFor":{"@type":"Organization","name":"Denim Loom"},"sameAs":["https://www.linkedin.com/in/asaad-areeb-050111183","https://github.com/AsaadAreeb"]}</script>
 </head>
@@ -58,11 +76,87 @@
   </div>
   <nav id="mobile-menu" class="mobile-panel" aria-label="Mobile navigation"><a href="./index.html" >Home</a><a href="./services.html" >Services</a><a href="./products.html" >Products</a><a href="./projects.html" >Projects</a><a href="./about.html" aria-current="page">About</a><a href="./blog.html" >Articles</a><a href="./contact.html" >Contact</a></nav>
 </header>
+
 <main id="main-content" class="main">
 
-<section class="section compact"><div class="container grid-2"><aside class="avatar" aria-label="AA monogram avatar"><svg viewBox="0 0 420 420" width="420" height="420" role="img" aria-labelledby="avatar-title"><title id="avatar-title">Muhammad Asaad Areeb AA monogram</title><rect width="420" height="420" rx="24" fill="var(--color-surface-2)" stroke="var(--color-border)"/><text x="50%" y="54%" text-anchor="middle" font-family="Instrument Serif, Georgia, serif" font-size="150" fill="#c8a96e">AA</text><circle cx="210" cy="210" r="150" fill="none" stroke="rgba(200,169,110,.25)"/></svg></aside><div><div class="eyebrow">About</div><h1>Muhammad Asaad Areeb — AI Systems Engineer & LLM Specialist</h1><p class="lead">I'm an AI systems engineer and data scientist with an MSc in Data Science and research experience at SPIDER Lab, Information Technology University. My work sits at the intersection of applied machine learning research and production engineering — I've fine-tuned large language models with LoRA, built retrieval-augmented generation systems from scratch, designed Power BI data architectures for manufacturing operations, and shipped full-stack web products currently live at scale. I take systems from prototype to production.</p><blockquote class="executive-answer"><p><strong>Philosophy:</strong> I don't build demo notebooks. I build systems where a team of people shows up Monday morning and something has already run, processed, and produced a result they trust.</p></blockquote><div class="button-row"><a class="btn primary" href="mailto:asaadareeb773@gmail.com">Email Me</a><a class="btn ghost" href="https://www.linkedin.com/in/asaad-areeb-050111183" target="_blank" rel="noopener noreferrer">LinkedIn</a><a class="btn ghost" href="https://github.com/AsaadAreeb" target="_blank" rel="noopener noreferrer">GitHub</a></div></div></div></section>
-<section class="section compact"><div class="container grid-2"><section><div class="eyebrow">Education & Research</div><h2>Academic and research foundation</h2><ol class="timeline"><li><time>Most recent</time><h3>MSc Data Science</h3><p>Graduate-level training across machine learning, data systems, evaluation, and applied analytics.</p></li><li><time>Feb 2025 – Aug 2025</time><h3>Graduate Fellow, SPIDER Lab, ITU</h3><p>Fine-tuning, NLP, LoRA, applied ML research, and model evaluation workflows.</p></li><li><time>Prior</time><h3>BSc Software Engineering</h3><p>Software engineering foundation across backend, frontend, mobile, and systems thinking.</p></li></ol></section><section><div class="eyebrow">Experience</div><h2>Production and industry timeline</h2><ol class="timeline"><li><time>Jan 2025 – Present</time><h3>Data Analyst, Denim Loom</h3><p>Power BI, ERP/CRM integration, forecasting, SQL, and operational dashboards.</p></li><li><time>Feb 2025 – Aug 2025</time><h3>Graduate Fellow, SPIDER Lab, ITU</h3><p>LLM fine-tuning, LoRA, NLP pipelines, and applied ML research.</p></li><li><time>Oct 2023 – May 2024</time><h3>Data Scientist, Technoventures</h3><p>Machine learning, time-series analysis, exploratory data analysis, and reporting.</p></li><li><time>Sep 2022 – Sep 2023</time><h3>Web Developer, Minisoft</h3><p>Django, REST APIs, backend development, and web application delivery.</p></li><li><time>Apr 2022 – Jun 2022</time><h3>Mobile App Developer Intern, Hello World</h3><p>React Native mobile application development and frontend implementation.</p></li></ol></section></div></section>
-<section class="section compact"><div class="container"><div class="eyebrow">Skills</div><h2>Skill breakdown for AI, BI, and production engineering.</h2><dl class="skill-dl"><div><dt>Programming & Ecosystem</dt><dd>Python, SQL, FastAPI, Django, React, Node.js, Bash, Git, REST APIs.</dd></div><div><dt>ML & DL</dt><dd>Scikit-learn, PyTorch, TensorFlow, classification, regression, feature engineering.</dd></div><div><dt>NLP, LLMs & RAG</dt><dd>RoBERTa, Llama 2, LoRA, LlamaIndex, Pinecone, Chroma, MiniLM, embeddings.</dd></div><div><dt>Data Analysis & BI</dt><dd>Power BI, DAX, star schema, Power Query, SQL Server, Zoho CRM, KPI modelling.</dd></div><div><dt>Computer Vision</dt><dd>YOLOv5, DeepLab v3, ENet, OpenCV, ONNX, TensorFlow Lite, Raspberry Pi.</dd></div><div><dt>Evaluation</dt><dd>BLEU, ROUGE, SHAP, perplexity, attention visualization, confusion matrices.</dd></div><div><dt>Backend & Cloud</dt><dd>GCP Speech-to-Text, Google Calendar API, AWS S3, PostgreSQL, LlamaIndex deployments.</dd></div><div><dt>Live product delivery</dt><dd>Corporate sites, brand pages, QR menu platforms, admin dashboards, and deployed tools.</dd></div></dl><div class="authorship">Profile last reviewed: May 2026. Connect on <a href="https://www.linkedin.com/in/asaad-areeb-050111183" target="_blank" rel="noopener noreferrer">LinkedIn</a> or view code on <a href="https://github.com/AsaadAreeb" target="_blank" rel="noopener noreferrer">GitHub</a>.</div></div></section>
+<section class="section compact">
+  <div class="about-wide about-hero-layout">
+    <aside class="portrait-frame" aria-label="Portrait photo of Muhammad Asaad Areeb">
+      <picture>
+        <source srcset="./assets/asaad-areeb.webp" type="image/webp">
+        <img src="./assets/asaad-areeb.jpg" alt="Muhammad Asaad Areeb, AI Systems Engineer and LLM Specialist" width="640" height="800" loading="eager" decoding="async" onerror="this.closest('.portrait-frame').classList.add('no-photo');this.remove();">
+      </picture>
+      <div class="portrait-caption"><strong>Muhammad Asaad Areeb</strong><br>AI Systems Engineer · LLM Specialist · Power BI Architect</div>
+    </aside>
+
+    <div class="about-copy">
+      <div class="eyebrow">About</div>
+      <h1>Muhammad Asaad Areeb — AI Systems Engineer &amp; LLM Specialist</h1>
+      <p class="lead">I'm an AI systems engineer and data scientist with an MSc in Data Science and research experience at SPIDER Lab, Information Technology University. My work sits at the intersection of applied machine learning research and production engineering: I fine-tune large language models with LoRA, build retrieval-augmented generation systems, design Power BI data architectures for manufacturing operations, and ship full-stack web products that are live for real users.</p>
+      <p>My strongest work is end-to-end system delivery. I can move from messy enterprise data, research papers, and prototype notebooks into deployed pipelines with APIs, dashboards, storage, evaluation, and user-facing workflows. That is the same direction I use across LLM engineering, RAG systems, agentic automation, business intelligence, and computer vision projects.</p>
+      <blockquote class="executive-answer"><p><strong>Philosophy:</strong> I don't build demo notebooks. I build systems where a team of people shows up Monday morning and something has already run, processed, and produced a result they trust.</p></blockquote>
+      <div class="about-actions">
+        <a class="btn primary" href="./projects.html">View Projects</a>
+        <a class="btn ghost" href="./services.html">Explore Services</a>
+        <a class="btn ghost" href="https://www.linkedin.com/in/asaad-areeb-050111183" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a class="btn ghost" href="https://github.com/AsaadAreeb" target="_blank" rel="noopener noreferrer">GitHub</a>
+      </div>
+    </div>
+
+    <aside class="profile-facts" aria-label="Profile facts">
+      <div class="profile-fact"><span>Current role</span><strong>Data Analyst, Denim Loom</strong><p>Power BI, SQL, ERP/CRM data, operational reporting, forecasting, and dashboard systems.</p></div>
+      <div class="profile-fact"><span>Research role</span><strong>Graduate Fellow, SPIDER Lab, ITU</strong><p>LLM fine-tuning, LoRA, NLP pipelines, model evaluation, and applied ML research.</p></div>
+      <div class="profile-fact"><span>Core identity</span><strong>AI Systems · LLMs · RAG · BI</strong><p>Production AI systems from research and data pipelines to deployed business workflows.</p></div>
+      <div class="profile-fact"><span>Live work</span><strong>denimloom.com · lume.denimloom.com</strong><p>Publicly visible web/product delivery experience across brand and business sites.</p></div>
+    </aside>
+  </div>
+</section>
+
+<section class="section compact">
+  <div class="about-wide about-timeline-layout">
+    <section class="timeline-card">
+      <div class="eyebrow">Education &amp; Research</div>
+      <h2>Academic and research foundation</h2>
+      <ol class="timeline">
+        <li><time>Most recent</time><h3>MSc Data Science</h3><p>Graduate-level training across machine learning, data systems, evaluation, and applied analytics.</p></li>
+        <li><time>Feb 2025 – Aug 2025</time><h3>Graduate Fellow, SPIDER Lab, ITU</h3><p>Fine-tuning, NLP, LoRA, applied ML research, and model evaluation workflows.</p></li>
+        <li><time>Prior</time><h3>BSc Software Engineering</h3><p>Software engineering foundation across backend, frontend, mobile, APIs, and systems thinking.</p></li>
+      </ol>
+    </section>
+    <section class="timeline-card">
+      <div class="eyebrow">Experience</div>
+      <h2>Production and industry timeline</h2>
+      <ol class="timeline">
+        <li><time>Jan 2025 – Present</time><h3>Data Analyst, Denim Loom</h3><p>Power BI dashboards, ERP/CRM integration, SQL reporting, forecasting, production visibility, and operational analytics.</p></li>
+        <li><time>Feb 2025 – Aug 2025</time><h3>Graduate Fellow, SPIDER Lab, Information Technology University</h3><p>LLM fine-tuning, LoRA, NLP pipelines, evaluation workflows, and applied ML research.</p></li>
+        <li><time>Oct 2023 – May 2024</time><h3>Data Scientist, Technoventures</h3><p>Machine learning, time-series analysis, exploratory data analysis, feature engineering, and reporting systems.</p></li>
+        <li><time>Sep 2022 – Sep 2023</time><h3>Web Developer, Minisoft</h3><p>Django, REST APIs, backend development, web application delivery, and database-backed systems.</p></li>
+        <li><time>Apr 2022 – Jun 2022</time><h3>Mobile App Developer Intern, Hello World</h3><p>React Native mobile application development, frontend implementation, and early production engineering experience.</p></li>
+      </ol>
+    </section>
+  </div>
+</section>
+
+<section class="section compact">
+  <div class="about-wide">
+    <div class="about-section-head">
+      <div class="eyebrow">Skills</div>
+      <h2>Skill breakdown for AI, BI, and production engineering</h2>
+      <p>These are grouped as domains because the work is system-level: models, APIs, data stores, dashboards, evaluation, deployment, and user workflows have to work together.</p>
+    </div>
+    <dl class="skill-dl wide-skills">
+      <div><dt>Programming &amp; Ecosystem</dt><dd>Python, SQL, FastAPI, Django, React, Node.js, Bash, Git, REST APIs.</dd></div>
+      <div><dt>ML &amp; Deep Learning</dt><dd>Scikit-learn, PyTorch, TensorFlow, classification, regression, feature engineering.</dd></div>
+      <div><dt>NLP, LLMs &amp; RAG</dt><dd>RoBERTa, Llama 2, LoRA, LlamaIndex, Pinecone, Chroma, MiniLM, embeddings.</dd></div>
+      <div><dt>Power BI &amp; Analytics</dt><dd>Power BI, DAX, star schema, Power Query, SQL Server, Zoho CRM, KPI modelling.</dd></div>
+      <div><dt>Computer Vision</dt><dd>YOLOv5, DeepLab v3, ENet, OpenCV, ONNX, TensorFlow Lite, Raspberry Pi.</dd></div>
+      <div><dt>Model Evaluation</dt><dd>BLEU, ROUGE, SHAP, perplexity, attention visualization, confusion matrices.</dd></div>
+      <div><dt>Backend &amp; Cloud</dt><dd>GCP Speech-to-Text, Google Calendar API, AWS S3, PostgreSQL, LlamaIndex deployments.</dd></div>
+      <div><dt>Product Delivery</dt><dd>Corporate sites, brand pages, QR menu platforms, admin dashboards, and deployed tools.</dd></div>
+    </dl>
+    <div class="authorship">Profile last reviewed: May 2026. Connect on <a href="https://www.linkedin.com/in/asaad-areeb-050111183" target="_blank" rel="noopener noreferrer">LinkedIn</a> or view code on <a href="https://github.com/AsaadAreeb" target="_blank" rel="noopener noreferrer">GitHub</a>.</div>
+  </div>
+</section>
 </main>
 
 <footer class="footer">

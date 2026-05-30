@@ -41,6 +41,24 @@
 @media (min-width:1500px){:root{--container:1440px}.hero{grid-template-columns:minmax(0,1.2fr) minmax(420px,.8fr)}.section{padding-block:clamp(3.5rem,6vw,6.5rem)}}
 @media (max-width:640px){h1{font-size:clamp(2.25rem,13vw,3.5rem)}h2{font-size:clamp(1.8rem,9vw,2.65rem)}.hero-visual{display:none}.button-row .btn{width:100%;justify-content:center}.trust-strip span{width:100%}.filter-bar a{flex:1 1 auto;text-align:center}.section,.section.compact{padding-block:2.25rem}.card{padding:1rem}.authorship{margin-top:1.25rem}.footer-links{display:grid;grid-template-columns:1fr 1fr;gap:.65rem}.product-card h3,.domain-card h3,.project-card h3,.article-card h3{font-size:1.45rem}.pill{line-height:1.35}}
 .experience-strip{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:.75rem;margin-top:1.25rem}.experience-mini{border:1px solid var(--color-border);border-radius:var(--radius);background:var(--color-surface-2);padding:1rem}.experience-mini time{display:block;color:var(--color-accent);font-size:var(--text-xs);font-weight:700;margin-bottom:.35rem}.experience-mini strong{display:block;line-height:1.25}.experience-mini span{display:block;color:var(--color-muted);font-size:var(--text-sm);margin-top:.35rem}.product-hero{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(320px,.95fr);gap:clamp(1rem,3vw,2rem);align-items:start}.product-detail{display:grid;gap:1rem}.product-detail .card h3{font-size:1.7rem}.product-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(1rem,2vw,1.35rem)}@media (max-width:900px){.product-hero,.product-grid{grid-template-columns:1fr}}
+
+
+/* Page-specific v4 improvements: wider desktop use, real-photo slot, less centered content */
+.about-wide{max-width:1540px;margin-inline:auto;padding-inline:clamp(1rem,2.8vw,3rem)}
+.about-hero-layout{display:grid;grid-template-columns:minmax(280px,390px) minmax(0,1.05fr) minmax(260px,340px);gap:clamp(1.25rem,2.5vw,2.75rem);align-items:start}
+.about-copy{max-width:980px}.about-copy .lead{max-width:980px}.about-copy h1{max-width:1080px}
+.portrait-frame{position:sticky;top:calc(var(--nav-height) + 1rem);border:1px solid var(--color-border);border-radius:1rem;background:linear-gradient(180deg,var(--color-surface),var(--color-surface-2));overflow:hidden;min-height:540px;display:grid;align-items:end}
+.portrait-frame picture,.portrait-frame img{display:block;width:100%;height:100%}.portrait-frame img{min-height:540px;object-fit:cover;object-position:center top;filter:saturate(.96) contrast(1.02)}
+.portrait-frame.no-photo{place-items:center;text-align:left;padding:1.25rem}.portrait-frame.no-photo::before{content:'Add your portrait at assets/asaad-areeb.jpg';display:block;width:100%;padding:1.1rem;border:1px dashed var(--color-border);border-radius:.75rem;color:var(--color-muted);background:var(--color-surface-2)}
+.portrait-caption{position:absolute;left:1rem;right:1rem;bottom:1rem;padding:.75rem;border:1px solid var(--color-border);border-radius:.75rem;background:color-mix(in srgb,var(--color-bg) 76%,transparent);backdrop-filter:blur(10px);font-size:var(--text-sm);color:var(--color-muted)}
+.profile-facts{display:grid;gap:.75rem}.profile-fact{border:1px solid var(--color-border);border-radius:var(--radius);background:var(--color-surface);padding:1rem}.profile-fact span{display:block;color:var(--color-accent);font-size:var(--text-xs);font-weight:800;letter-spacing:.08em;text-transform:uppercase;margin-bottom:.35rem}.profile-fact strong{display:block;font-size:1rem;line-height:1.35}.profile-fact p{font-size:var(--text-sm);margin:.35rem 0 0}
+.about-actions{display:flex;flex-wrap:wrap;gap:.75rem;margin-top:1.4rem}.about-timeline-layout{display:grid;grid-template-columns:minmax(300px,.78fr) minmax(0,1.22fr);gap:clamp(1.25rem,2.5vw,2.75rem);align-items:start}.about-section-head{max-width:860px;margin-bottom:1.5rem}.timeline-card{border:1px solid var(--color-border);border-radius:1rem;background:var(--color-surface);padding:clamp(1rem,2vw,1.5rem)}
+.skill-dl.wide-skills{grid-template-columns:repeat(4,minmax(0,1fr));gap:1rem}.skill-dl.wide-skills div{min-height:138px}.skill-dl dt{font-size:var(--text-sm);line-height:1.35}.skill-dl dd{font-size:var(--text-sm);line-height:1.6}
+.contact-wide{max-width:1480px;margin-inline:auto;padding-inline:clamp(1rem,2.8vw,3rem)}.contact-layout{display:grid;grid-template-columns:minmax(0,.9fr) minmax(460px,1.1fr);gap:clamp(1.25rem,3vw,3rem);align-items:start}.contact-panel{border:1px solid var(--color-border);border-radius:1rem;background:var(--color-surface);padding:clamp(1rem,2.2vw,1.75rem)}.form-note{font-size:var(--text-sm);color:var(--color-muted);margin-top:1rem}.hidden-honey{position:absolute!important;left:-9999px!important;opacity:0!important;height:0!important;width:0!important;pointer-events:none!important}
+.submit-success{display:none;margin-top:1rem;border:1px solid var(--color-border);border-radius:var(--radius);background:var(--color-accent-bg);padding:1rem;color:var(--color-muted)}.submit-success:target{display:block}
+@media (max-width:1180px){.about-hero-layout{grid-template-columns:320px minmax(0,1fr)}.profile-facts{grid-column:1/-1;grid-template-columns:repeat(3,minmax(0,1fr))}.about-timeline-layout{grid-template-columns:1fr}.skill-dl.wide-skills{grid-template-columns:repeat(2,minmax(0,1fr))}.contact-layout{grid-template-columns:1fr}}
+@media (max-width:720px){.about-wide,.contact-wide{padding-inline:1rem}.about-hero-layout{grid-template-columns:1fr}.portrait-frame{position:relative;top:auto;min-height:420px}.portrait-frame img{min-height:420px}.profile-facts{grid-template-columns:1fr}.skill-dl.wide-skills{grid-template-columns:1fr}.about-actions .btn{width:100%;justify-content:center}.contact-panel{padding:1rem}.contact-form button{width:100%}}
+
 </style>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"ContactPage","name":"Contact Muhammad Asaad Areeb","url":"https://asaadareeb.github.io/contact.html","mainEntity":{"@type":"Person","name":"Muhammad Asaad Areeb","email":"asaadareeb773@gmail.com","availableLanguage":["English","Urdu"],"jobTitle":"AI Systems Engineer and LLM Specialist","sameAs":["https://www.linkedin.com/in/asaad-areeb-050111183","https://github.com/AsaadAreeb"]}}</script>
 </head>
@@ -58,9 +76,71 @@
   </div>
   <nav id="mobile-menu" class="mobile-panel" aria-label="Mobile navigation"><a href="./index.html" >Home</a><a href="./services.html" >Services</a><a href="./products.html" >Products</a><a href="./projects.html" >Projects</a><a href="./about.html" >About</a><a href="./blog.html" >Articles</a><a href="./contact.html" aria-current="page">Contact</a></nav>
 </header>
+
 <main id="main-content" class="main">
 
-<section class="section"><div class="container grid-2"><div><div class="eyebrow">Contact</div><h1>Work With Me</h1><p class="lead">I'm available for full-time roles, contract projects, and research collaborations in AI engineering, LLM systems, and Power BI.</p><div class="pill-row"><span class="pill">Full-Time Role</span><span class="pill">Contract / Freelance</span><span class="pill">Research Collaboration</span></div><div class="card" style="margin-top:1.5rem"><p><strong>Response time:</strong> Usually within 24 hours.</p><p><strong>Timezone:</strong> PKT (UTC+5)</p><p><a href="mailto:asaadareeb773@gmail.com">Email</a> · <a href="https://www.linkedin.com/in/asaad-areeb-050111183" target="_blank" rel="noopener noreferrer">LinkedIn</a> · <a href="https://github.com/AsaadAreeb" target="_blank" rel="noopener noreferrer">GitHub</a> · <a href="https://drive.google.com/file/d/1ac3T2udJ-s2dyA33P7Pn5kL-yvVVGLge/view?usp=sharing" target="_blank" rel="noopener noreferrer">Download CV</a></p></div><div class="authorship">Written by <a href="./about.html">Muhammad Asaad Areeb</a> — AI Systems Engineer, MSc Data Science, Graduate Fellow SPIDER Lab ITU. Profile last updated: May 2026.</div></div><div class="card"><form class="contact-form" action="mailto:asaadareeb773@gmail.com" method="get" enctype="text/plain"><label for="name">Full name</label><input id="name" name="name" type="text" autocomplete="name" required placeholder="Your name"><label for="email">Email address</label><input id="email" name="email" type="email" autocomplete="email" required placeholder="you@company.com"><label for="type">Engagement type</label><select id="type" name="type"><option value="">Select one</option><option>Full-time role</option><option>Contract / Freelance project</option><option>Research collaboration</option><option>Technical consultation</option><option>Other</option></select><label for="domain">Domain</label><select id="domain" name="domain"><option value="">Select one</option><option>LLM Engineering / Fine-tuning</option><option>RAG Systems</option><option>Power BI / Business Intelligence</option><option>Agentic AI / Automation</option><option>Computer Vision</option><option>Full-stack Development</option><option>Multiple / Not sure</option></select><label for="message">Tell me about the role or project</label><textarea id="message" name="message" rows="5" required placeholder="e.g. We need someone to build a RAG pipeline over internal documents..."></textarea><button type="submit">Send message</button></form></div></div></section>
+<section class="section">
+  <div class="contact-wide contact-layout">
+    <div>
+      <div class="eyebrow">Contact</div>
+      <h1>Work With Me</h1>
+      <p class="lead">I'm available for full-time roles, contract projects, and research collaborations in AI engineering, LLM systems, RAG pipelines, agentic automation, computer vision, and Power BI.</p>
+      <div class="pill-row"><span class="pill">Full-Time Role</span><span class="pill">Contract / Freelance</span><span class="pill">Research Collaboration</span><span class="pill">Technical Consultation</span></div>
+      <div class="contact-panel" style="margin-top:1.5rem">
+        <p><strong>Response time:</strong> Usually within 24 hours.</p>
+        <p><strong>Timezone:</strong> PKT (UTC+5)</p>
+        <p><strong>Best-fit work:</strong> LLM engineering, RAG systems, Power BI dashboards, AI automation, applied ML research, and full-stack AI products.</p>
+        <p><a href="mailto:asaadareeb773@gmail.com">Email</a> · <a href="https://www.linkedin.com/in/asaad-areeb-050111183" target="_blank" rel="noopener noreferrer">LinkedIn</a> · <a href="https://github.com/AsaadAreeb" target="_blank" rel="noopener noreferrer">GitHub</a> · <a href="https://drive.google.com/file/d/1ac3T2udJ-s2dyA33P7Pn5kL-yvVVGLge/view?usp=sharing" target="_blank" rel="noopener noreferrer">Download CV</a></p>
+      </div>
+      <div id="sent" class="submit-success"><strong>Message sent.</strong> If FormSubmit redirects back here, your submission has been processed.</div>
+      <div class="authorship">Written by <a href="./about.html">Muhammad Asaad Areeb</a> — AI Systems Engineer, MSc Data Science, Graduate Fellow SPIDER Lab ITU. Profile last updated: May 2026.</div>
+    </div>
+
+    <div class="contact-panel">
+      <form class="contact-form" action="https://formsubmit.co/el/ziwigi" method="POST">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_subject" value="New portfolio inquiry for Muhammad Asaad Areeb">
+        <input type="hidden" name="_next" value="https://asaadareeb.github.io/contact.html#sent">
+        <input type="hidden" name="_autoresponse" value="Thanks for reaching out to Muhammad Asaad Areeb. I received your message and will reply as soon as possible.">
+        <input class="hidden-honey" type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+        <label for="name">Full name</label>
+        <input id="name" name="name" type="text" autocomplete="name" required placeholder="Your name">
+
+        <label for="email">Email address</label>
+        <input id="email" name="email" type="email" autocomplete="email" required placeholder="you@company.com">
+
+        <label for="type">Engagement type</label>
+        <select id="type" name="engagement_type" required>
+          <option value="">Select one</option>
+          <option>Full-time role</option>
+          <option>Contract / Freelance project</option>
+          <option>Research collaboration</option>
+          <option>Technical consultation</option>
+          <option>Other</option>
+        </select>
+
+        <label for="domain">Domain</label>
+        <select id="domain" name="domain" required>
+          <option value="">Select one</option>
+          <option>LLM Engineering / Fine-tuning</option>
+          <option>RAG Systems</option>
+          <option>Power BI / Business Intelligence</option>
+          <option>Agentic AI / Automation</option>
+          <option>Computer Vision</option>
+          <option>Full-stack Development</option>
+          <option>Multiple / Not sure</option>
+        </select>
+
+        <label for="message">Tell me about the role or project</label>
+        <textarea id="message" name="message" rows="6" required placeholder="e.g. We need someone to build a RAG pipeline over internal documents..."></textarea>
+
+        <button type="submit">Send message</button>
+        <p class="form-note">This form uses FormSubmit and keeps your email link hidden from the page source through the verified FormSubmit email-link URL.</p>
+      </form>
+    </div>
+  </div>
+</section>
 </main>
 
 <footer class="footer">
