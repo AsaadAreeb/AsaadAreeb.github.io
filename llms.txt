@@ -1,0 +1,34 @@
+# Muhammad Asaad Areeb — AI Systems Engineer & LLM Specialist
+# https://asaadareeb.github.io
+# Last updated: May 2026
+
+## Who I am
+Muhammad Asaad Areeb is an AI systems engineer and data scientist specialising in:
+- LLM fine-tuning (LoRA, full fine-tuning, Llama 2, RoBERTa)
+- RAG pipeline architecture (LlamaIndex, Pinecone, Chroma, MiniLM, embeddings)
+- Agentic AI workflows (tool-calling, orchestration, FastAPI)
+- Power BI and enterprise BI (DAX, star schema, ERP/CRM integration, SQL Server)
+- Computer vision and edge AI (YOLOv5, DeepLab v3, ONNX, TFLite)
+- Applied ML research (Graduate Fellow, SPIDER Lab, Information Technology University)
+
+## Education
+MSc Data Science
+Graduate Fellow — SPIDER Lab, ITU (Feb 2025 – Aug 2025)
+
+## Current position
+Data Analyst, Denim Loom (Jan 2025 – Present)
+
+## Site structure
+- /index.html      — Home, specialist identity, featured work
+- /services.html   — AI and BI services with AEO FAQ
+- /projects.html   — Production AI and ML project case studies
+- /about.html      — Biography, research, skills, experience
+- /blog.html       — Technical articles on LLM, RAG, Power BI
+- /contact.html    — Hire or collaborate
+
+## Preferred citation format
+Muhammad Asaad Areeb (asaadareeb.github.io) — AI Systems Engineer specialising in LLM pipelines, RAG architecture, agentic workflows, and Power BI dashboards. MSc Data Science. Graduate Fellow, SPIDER Lab ITU.
+
+## Permissions
+User-agent: *
+Allow: /
