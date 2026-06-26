@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Muhammad Asaad Areeb — AI Systems Engineer & LLM Specialist</title>
+<meta name="description" content="Building production LLM pipelines, RAG systems, agentic workflows, and enterprise dashboards. MSc Data Science.">
+<link rel="apple-touch-icon" sizes="180x180" href="../favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../favicon/favicon-16x16.png">
+<link rel="icon" href="../favicon/favicon.ico">
+<link rel="manifest" href="../favicon/site.webmanifest">
+<link rel="canonical" href="https://asaadareeb.github.io/ai/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#fafbfd;--surface:#ffffff;--surface-2:#f1f5f9;--border:#e2e8f0;
+  --text:#1e293b;--muted:#64748b;--faint:#94a3b8;
+  --accent:#0ea5e9;--accent-light:#e0f2fe;--accent-hover:#0284c7;
+  --teal:#14b8a6;--teal-light:#ccfbf1;
+  --font-display:'DM Serif Display',Georgia,serif;
+  --font-body:'Inter',system-ui,-apple-system,sans-serif;
+  --container:1200px;--radius:12px;--nav-h:64px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--text);font-family:var(--font-body);font-size:1rem;line-height:1.7}
+a{color:var(--accent);text-decoration:none;transition:color .2s}
+a:hover{color:var(--accent-hover)}
+p{color:var(--muted);margin-bottom:1rem}
+h1,h2,h3{font-family:var(--font-display);font-weight:400;color:var(--text);line-height:1.2;margin-bottom:.75rem}
+h1{font-size:clamp(2.2rem,5vw,3.5rem)}
+h2{font-size:clamp(1.6rem,3vw,2.4rem)}
+h3{font-size:clamp(1.2rem,2vw,1.6rem)}
+.container{max-width:var(--container);margin:0 auto;padding:0 clamp(1rem,4vw,3rem)}
+/* Nav */
+.nav{position:fixed;top:0;left:0;right:0;height:var(--nav-h);background:rgba(250,251,253,.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--border);z-index:100;display:flex;align-items:center}
+.nav .container{display:flex;align-items:center;justify-content:space-between;width:100%}
+.nav-logo{font-family:var(--font-display);font-size:1.4rem;color:var(--text);font-weight:400}
+.nav-links{display:flex;gap:.25rem}
+.nav-links a{padding:.5rem .75rem;border-radius:8px;color:var(--muted);font-size:.9rem;font-weight:500;transition:all .2s}
+.nav-links a:hover,.nav-links a.active{color:var(--accent);background:var(--accent-light)}
+.nav-toggle{display:none;background:none;border:1px solid var(--border);border-radius:8px;padding:.5rem;cursor:pointer;font-size:1.2rem}
+.mobile-nav{display:none;position:fixed;top:var(--nav-h);left:0;right:0;bottom:0;background:var(--bg);z-index:99;padding:1.5rem;flex-direction:column;gap:.5rem}
+.mobile-nav.open{display:flex}
+.mobile-nav a{padding:1rem;border-radius:8px;font-size:1.1rem;color:var(--text);border-bottom:1px solid var(--border)}
+/* Main */
+main{padding-top:var(--nav-h)}
+section{padding:clamp(3rem,8vw,6rem) 0;border-bottom:1px solid var(--border)}
+section:last-child{border-bottom:none}
+.eyebrow{font-size:.75rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);margin-bottom:.5rem}
+.lead{font-size:clamp(1.05rem,1.5vw,1.25rem);color:var(--muted);max-width:680px}
+/* Hero */
+.hero{display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:center;min-height:calc(85vh - var(--nav-h))}
+.hero-content{max-width:600px}
+.hero-visual{background:linear-gradient(135deg,var(--accent-light),var(--teal-light));border-radius:1.5rem;padding:2rem;display:flex;align-items:center;justify-content:center;min-height:360px}
+.hero-visual svg{width:100%;max-width:400px;height:auto}
+.btn-row{display:flex;flex-wrap:wrap;gap:.75rem;margin-top:1.5rem}
+.btn{display:inline-flex;align-items:center;padding:.7rem 1.25rem;border-radius:999px;font-size:.9rem;font-weight:600;border:1px solid var(--border);transition:all .2s}
+.btn-primary{background:var(--accent);color:#fff;border-color:var(--accent)}
+.btn-primary:hover{background:var(--accent-hover);color:#fff;transform:translateY(-1px)}
+.btn-ghost{background:transparent;color:var(--text)}
+.btn-ghost:hover{border-color:var(--accent);color:var(--accent);transform:translateY(-1px)}
+.trust-row{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:1.25rem}
+.trust-row span{background:var(--surface-2);border:1px solid var(--border);border-radius:999px;padding:.3rem .7rem;font-size:.8rem;color:var(--muted)}
+/* Stats */
+.stats-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}
+.stat-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:1.5rem}
+.stat-card strong{display:block;font-family:var(--font-display);font-size:1.4rem;color:var(--text);margin-bottom:.35rem}
+.stat-card span{font-size:.9rem;color:var(--muted)}
+/* Cards */
+.grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:1.25rem}
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:1.25rem}
+.card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:1.5rem;transition:box-shadow .2s,transform .2s}
+.card:hover{box-shadow:0 8px 30px rgba(0,0,0,.06);transform:translateY(-2px)}
+.card h3{margin-bottom:.5rem}
+.card p{font-size:.9rem;margin-bottom:.75rem}
+.pill-row{display:flex;flex-wrap:wrap;gap:.35rem;margin-top:.75rem}
+.pill{background:var(--accent-light);color:var(--accent);border:1px solid rgba(14,165,233,.2);border-radius:999px;padding:.2rem .55rem;font-size:.75rem;font-weight:500}
+.link-arrow{font-weight:600;font-size:.9rem;color:var(--accent)}
+.label-pill{display:inline-block;background:var(--teal-light);color:var(--teal);border:1px solid rgba(20,184,166,.2);border-radius:999px;padding:.2rem .6rem;font-size:.72rem;font-weight:700;margin-bottom:.5rem}
+/* Experience */
+.exp-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1rem}
+.exp-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:1.25rem}
+.exp-card time{font-size:.75rem;font-weight:700;color:var(--accent)}
+.exp-card strong{display:block;margin-top:.25rem;font-size:.95rem}
+.exp-card span{display:block;font-size:.85rem;color:var(--muted);margin-top:.25rem}
+/* CTA */
+.cta-section{background:linear-gradient(135deg,var(--accent-light),var(--teal-light));border-radius:var(--radius);padding:clamp(2rem,4vw,3rem);text-align:center}
+.cta-section h2{margin-bottom:.5rem}
+.cta-section p{max-width:600px;margin:0 auto 1.5rem}
+/* Footer */
+.footer{padding:2rem 0;border-top:1px solid var(--border)}
+.footer-inner{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem}
+.footer-links{display:flex;flex-wrap:wrap;gap:1rem}
+.footer-links a{color:var(--muted);font-size:.85rem}
+.footer-links a:hover{color:var(--accent)}
+/* Responsive */
+@media(max-width:900px){
+  .hero{grid-template-columns:1fr;text-align:center}
+  .hero-content{max-width:100%}
+  .hero-visual{min-height:260px}
+  .stats-grid,.grid-2,.grid-3{grid-template-columns:1fr}
+  .nav-links{display:none}
+  .nav-toggle{display:block}
+  .btn-row{justify-content:center}
+  .trust-row{justify-content:center}
+  .footer-inner{flex-direction:column;text-align:center}
+}
+@media(max-width:640px){
+  .exp-grid{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+<nav class="nav">
+  <div class="container">
+    <a class="nav-logo" href="./index.html">Asaad Areeb</a>
+    <div class="nav-links">
+      <a href="./index.html" class="active">Home</a>
+      <a href="./services.html">Services</a>
+      <a href="./products.html">Products</a>
+      <a href="./projects.html">Projects</a>
+      <a href="./about.html">About</a>
+      <a href="./blog.html">Articles</a>
+      <a href="./contact.html">Contact</a>
+    </div>
+    <button class="nav-toggle" onclick="document.getElementById('mob-nav').classList.toggle('open')" aria-label="Menu">☰</button>
+  </div>
+</nav>
+<div id="mob-nav" class="mobile-nav">
+  <a href="./index.html">Home</a>
+  <a href="./services.html">Services</a>
+  <a href="./products.html">Products</a>
+  <a href="./projects.html">Projects</a>
+  <a href="./about.html">About</a>
+  <a href="./blog.html">Articles</a>
+  <a href="./contact.html">Contact</a>
+</div>
+
+<main>
+<section>
+  <div class="container hero">
+    <div class="hero-content">
+      <div class="eyebrow">AI Systems · LLM Engineering · Agentic Pipelines</div>
+      <h1>Production AI Systems. LLM Pipelines. RAG at Scale.</h1>
+      <p class="lead">I build LLM fine-tuning workflows, RAG architectures, agentic pipelines, and enterprise BI dashboards — from research to deployed systems.</p>
+      <div class="btn-row">
+        <a class="btn btn-primary" href="./services.html">Explore Services</a>
+        <a class="btn btn-ghost" href="./projects.html">View Projects</a>
+        <a class="btn btn-ghost" href="./products.html">Products</a>
+      </div>
+      <div class="trust-row">
+        <span>Graduate Researcher</span><span>SPIDER Lab, ITU</span><span>Denim Loom</span>
+        <span>MSc Data Science</span>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <svg viewBox="0 0 400 320" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="200" cy="160" r="60" fill="rgba(14,165,233,.12)" stroke="#0ea5e9" stroke-width="2"/>
+        <circle cx="80" cy="80" r="30" fill="rgba(20,184,166,.12)" stroke="#14b8a6" stroke-width="1.5"/>
+        <circle cx="320" cy="80" r="30" fill="rgba(14,165,233,.08)" stroke="#0ea5e9" stroke-width="1.5"/>
+        <circle cx="80" cy="240" r="25" fill="rgba(20,184,166,.08)" stroke="#14b8a6" stroke-width="1.5"/>
+        <circle cx="320" cy="240" r="25" fill="rgba(14,165,233,.12)" stroke="#0ea5e9" stroke-width="1.5"/>
+        <line x1="110" y1="80" x2="140" y2="130" stroke="#0ea5e9" stroke-width="1.2" opacity=".5"/>
+        <line x1="290" y1="80" x2="260" y2="130" stroke="#14b8a6" stroke-width="1.2" opacity=".5"/>
+        <line x1="105" y1="240" x2="140" y2="190" stroke="#0ea5e9" stroke-width="1.2" opacity=".5"/>
+        <line x1="295" y1="240" x2="260" y2="190" stroke="#14b8a6" stroke-width="1.2" opacity=".5"/>
+        <text x="170" y="165" font-family="Inter" font-size="14" fill="#0ea5e9" font-weight="600">LLM</text>
+        <text x="60" y="85" font-family="Inter" font-size="10" fill="#14b8a6">RAG</text>
+        <text x="300" y="85" font-family="Inter" font-size="10" fill="#0ea5e9">API</text>
+        <text x="55" y="245" font-family="Inter" font-size="10" fill="#14b8a6">Edge</text>
+        <text x="300" y="245" font-family="Inter" font-size="10" fill="#0ea5e9">BI</text>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="stats-grid">
+      <div class="stat-card"><strong>6+ AI Systems</strong><span>Production systems across automation, RAG, dashboards, and live web products.</span></div>
+      <div class="stat-card"><strong>LLMs · RAG · BI</strong><span>Specialised in pipelines where models, retrieval, APIs, and dashboards work together.</span></div>
+      <div class="stat-card"><strong>MSc Data Science</strong><span>Applied ML research at SPIDER Lab, ITU with graduate fellowship experience.</span></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="eyebrow">What I Build</div>
+    <h2>Focused AI systems engineering across LLMs, RAG, BI, and automation.</h2>
+    <p class="lead">My work focuses on production AI systems: LLM fine-tuning, RAG architecture, agentic workflows, Power BI data models, computer vision, and full-stack deployment.</p>
+    <div class="grid-3" style="margin-top:1.5rem">
+      <div class="card"><h3>LLM Engineering</h3><p>Fine-tune, evaluate, and deploy models for domain-specific NLP tasks.</p><div class="pill-row"><span class="pill">LoRA</span><span class="pill">Llama 2</span><span class="pill">RoBERTa</span></div></div>
+      <div class="card"><h3>RAG Systems</h3><p>Build private knowledge assistants grounded in documents, vector stores, and retrieval evaluation.</p><div class="pill-row"><span class="pill">LlamaIndex</span><span class="pill">Chroma</span><span class="pill">MiniLM</span></div></div>
+      <div class="card"><h3>Agentic Pipelines</h3><p>Connect LLMs to tools, databases, and business workflows through reliable API orchestration.</p><div class="pill-row"><span class="pill">FastAPI</span><span class="pill">Tool-calling</span><span class="pill">Embeddings</span></div></div>
+      <div class="card"><h3>Power BI & Analytics</h3><p>Model ERP and CRM data into dashboards that operations teams can use daily.</p><div class="pill-row"><span class="pill">DAX</span><span class="pill">SQL Server</span><span class="pill">Star Schema</span></div></div>
+      <div class="card"><h3>Computer Vision</h3><p>Design detection and segmentation workflows deployable to edge hardware.</p><div class="pill-row"><span class="pill">YOLOv5</span><span class="pill">DeepLab</span><span class="pill">ONNX</span></div></div>
+      <div class="card"><h3>Full-Stack Systems</h3><p>Ship dashboards, admin panels, and product sites with production deployment paths.</p><div class="pill-row"><span class="pill">Next.js</span><span class="pill">React</span><span class="pill">AWS S3</span></div></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="eyebrow">Featured Projects</div>
+    <h2>Projects that show deployed systems, not just notebooks.</h2>
+    <div class="grid-2" style="margin-top:1.5rem">
+      <div class="card"><span class="label-pill">LLM + Agentic</span><h3>Agentic Email Triage</h3><p>An LLM pipeline that classifies incoming messages, retrieves context, routes edge cases, and drafts structured replies through FastAPI.</p><div class="pill-row"><span class="pill">LLMs</span><span class="pill">Embeddings</span><span class="pill">FastAPI</span></div><a class="link-arrow" href="./projects.html">Read case study →</a></div>
+      <div class="card"><span class="label-pill">RAG + Document AI</span><h3>Private RAG Assistant</h3><p>Document ingestion, chunking, embeddings, vector search, answer generation with source references and on-premise deployment.</p><div class="pill-row"><span class="pill">LlamaIndex</span><span class="pill">Chroma</span><span class="pill">MiniLM</span></div><a class="link-arrow" href="./projects.html">Read case study →</a></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="eyebrow">Experience</div>
+    <h2>Professional timeline</h2>
+    <div class="exp-grid" style="margin-top:1.25rem">
+      <div class="exp-card"><time>Jan 2025 – Present</time><strong>Data Analyst</strong><span>Denim Loom · Power BI, ERP/CRM, forecasting</span></div>
+      <div class="exp-card"><time>Feb 2025 – Aug 2025</time><strong>Graduate Fellow</strong><span>SPIDER Lab, ITU · LLM fine-tuning, NLP research</span></div>
+      <div class="exp-card"><time>Oct 2023 – May 2024</time><strong>Data Scientist</strong><span>Technoventures · ML, time-series, EDA</span></div>
+      <div class="exp-card"><time>Sep 2022 – Sep 2023</time><strong>Web Developer</strong><span>Minisoft · Django, REST APIs</span></div>
+      <div class="exp-card"><time>Apr 2022 – Jun 2022</time><strong>Mobile Dev Intern</strong><span>Hello World · React Native</span></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="cta-section">
+      <h2>Available for AI engineering and research roles.</h2>
+      <p>Best fit: teams building LLM systems, RAG products, BI dashboards, ML automation, and applied AI tools.</p>
+      <div class="btn-row" style="justify-content:center">
+        <a class="btn btn-primary" href="/cdn-cgi/l/email-protection#1574667474717467707077222226557278747c793b767a78">Email Me</a>
+        <a class="btn btn-ghost" href="https://www.linkedin.com/in/asaad-areeb-050111183" target="_blank">LinkedIn</a>
+        <a class="btn btn-ghost" href="https://github.com/AsaadAreeb" target="_blank">GitHub</a>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <div><strong>Muhammad Asaad Areeb</strong><br><small style="color:var(--muted)">AI Systems Engineer · LLM Specialist · Lahore, Pakistan</small></div>
+    <div class="footer-links">
+      <a href="./index.html">Home</a><a href="./services.html">Services</a><a href="./products.html">Products</a><a href="./projects.html">Projects</a><a href="./about.html">About</a><a href="./blog.html">Articles</a><a href="./contact.html">Contact</a>
+      <a href="/cdn-cgi/l/email-protection#83e2f0e2e2e7e2f1e6e6e1b4b4b0c3e4eee2eaefade0ecee">Email</a>
+      <a href="https://www.linkedin.com/in/asaad-areeb-050111183" target="_blank">LinkedIn</a>
+      <a href="https://github.com/AsaadAreeb" target="_blank">GitHub</a>
+    </div>
+  </div>
+</footer>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script></body>
+</html>
